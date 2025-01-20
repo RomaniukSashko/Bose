@@ -1,0 +1,55 @@
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-style: normal;
+}
+
+h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 10px;
+  outline: 5px solid burlywood;
+}
+@media screen and (min-width: 280px) {
+  .container {
+    width: 280px;
+  }
+}
+@media screen and (min-width: 648px) {
+  .container {
+    width: 648px;
+    padding: 0 30px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding: 0 20px;
+  }
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url(../fonts/Gilroy-Regular.ttf) format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background-color: #191919;
+  font-family: "Gilroy";
+}/*# sourceMappingURL=main.css.map */
