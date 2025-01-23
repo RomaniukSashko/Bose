@@ -1,0 +1,49 @@
+.header {
+    padding-top: 30px;
+    padding-bottom: 32px;
+
+    @media screen and (min-width: 648px) {
+        padding-top: 50px;
+        padding-bottom: 52px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-top: 64px;
+        padding-bottom: 74px;
+    }
+
+    & > .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__button {
+        @media screen and (min-width: 1280px) {
+            display: none;
+        }
+    }
+}
+
+.nav {
+    display: none;
+
+    @media screen and (min-width: 1280px) {
+        display: block;
+    }
+
+    &__list {
+        display: flex;
+        gap: 77px;
+    }
+
+    &__link {
+        color: $text-color;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.1875;
+
+        &:hover, &:focus {
+            color: white;
+        }
+    }
+}

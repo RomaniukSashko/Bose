@@ -80,4 +80,52 @@ body {
   font-weight: 400;
   line-height: 1.45;
   width: 510px;
+
+.header {
+  padding-top: 30px;
+  padding-bottom: 32px;
+}
+@media screen and (min-width: 648px) {
+  .header {
+    padding-top: 50px;
+    padding-bottom: 52px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header {
+    padding-top: 64px;
+    padding-bottom: 74px;
+  }
+}
+.header > .container {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (min-width: 1280px) {
+  .header__button {
+    display: none;
+  }
+}
+
+.nav {
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .nav {
+    display: block;
+  }
+}
+.nav__list {
+  display: flex;
+  gap: 77px;
+}
+.nav__link {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.1875;
+}
+.nav__link:hover, .nav__link:focus {
+  color: white;
+
 }/*# sourceMappingURL=main.css.map */
