@@ -1,0 +1,43 @@
+.capable {
+    padding-top: 85px;
+    padding-bottom: 85px;
+
+    &__title {
+        color: $title-color;
+        font-size: 54px;
+        font-weight: 600;
+        line-height: 1.2;
+        letter-spacing: 1.08px;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 20px;
+        // flex-basis: calc(107/2);
+        height: 127px;
+
+    }
+
+    &__text {
+        color: $text-color;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.45;
+        display: flex;
+        gap: 22px;
+        align-items: center;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 13px;
+            height: 13px;
+            background-color: $button-color;
+            border-radius: 50%;
+        }
+    }
+}

@@ -52,4 +52,42 @@ img {
 body {
   background-color: #191919;
   font-family: "Gilroy";
+}
+
+.capable {
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+.capable__title {
+  color: #E7E7E7;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.capable__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
+  height: 127px;
+}
+.capable__text {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.45;
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+.capable__text::before {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 13px;
+  background-color: #DF3D3A;
+  border-radius: 50%;
 }/*# sourceMappingURL=main.css.map */
