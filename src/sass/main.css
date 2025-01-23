@@ -54,6 +54,33 @@ body {
   font-family: "Gilroy";
 }
 
+.design {
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+.design__title {
+  color: #E7E7E7;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+  width: 464px;
+}
+.design__subtitle {
+  color: #E7E7E7;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.25;
+}
+.design__text {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.45;
+  width: 510px;
+
 .header {
   padding-top: 30px;
   padding-bottom: 32px;
@@ -100,4 +127,5 @@ body {
 }
 .nav__link:hover, .nav__link:focus {
   color: white;
+
 }/*# sourceMappingURL=main.css.map */
