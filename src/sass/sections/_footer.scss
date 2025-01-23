@@ -1,0 +1,29 @@
+.footer {
+    padding-top: 85px;
+    padding-bottom: 77px;
+
+    & > .container{
+        display: flex;
+    }
+
+    &__list {
+        display: flex;
+        gap: 50px;
+    }
+
+    &__link {
+        color: $footer-color;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.25;
+    }
+
+    &__tel {
+        color: $text-color;
+        font-family: "Roboto";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.1875;
+        margin-left: auto;
+    }
+}
