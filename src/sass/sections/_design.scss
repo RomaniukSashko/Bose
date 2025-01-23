@@ -1,0 +1,30 @@
+.design {
+    padding-top: 85px;
+    padding-bottom: 85px;
+
+    &__title {
+        color: $title-color;
+        font-size: 54px;
+        font-weight: 600;
+        line-height: 1.2;
+        letter-spacing: 1.08px;
+        text-transform: uppercase;
+        width: 464px;
+    }
+
+    &__subtitle {
+        color: $title-color;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1.25;
+    }
+
+    &__text {
+        color: $text-color;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.45;
+        width: 510px;
+    }
+}
