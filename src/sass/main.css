@@ -139,6 +139,46 @@ body {
   color: white;
 }
 
+.hero__text {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.25;
+  max-width: 222px;
+  margin-bottom: 16px;
+}
+.hero__text:nth-child(2) {
+  max-width: 93px;
+  margin-bottom: 32px;
+}
+.hero__title {
+  color: #E7E7E7;
+  max-width: 234px;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.68px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+.hero__btn {
+  display: inline-block;
+  max-width: 280px;
+  padding: 19px 113px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+  background-color: #DF3D3A;
+  margin-bottom: 32px;
+}
+.hero__img {
+  max-width: 280px;
+  height: 240px;
+}
+
 .design {
   padding-top: 85px;
   padding-bottom: 85px;
