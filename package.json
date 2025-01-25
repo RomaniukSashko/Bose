@@ -1,11 +1,11 @@
 {
-  "name": "project-name",
+  "name": "Bose",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite --host",
-    "build": "vite build --base=/project-name/",
+    "build": "vite build --base=/Bose/",
     "preview": "vite preview"
   },
   "devDependencies": {
