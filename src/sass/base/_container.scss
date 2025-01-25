@@ -1,20 +1,20 @@
 .container {
-    max-width: 1280px;
+    max-width: 1320px;
     margin: 0 auto;
     padding: 0 10px;
     outline: 5px solid burlywood;
 
-    @media screen and (min-width: 280px) {
-        width: 280px;
+    @media screen and (min-width: 300px) {
+        width: 300px;
     }
 
-    @media screen and (min-width: 648px) {
-        width: 648px;
+    @media screen and (min-width: 708px) {
+        width: 708px;
         padding: 0 30px;
     }
 
-    @media screen and (min-width: 1280px) {
-        width: 1280px;
+    @media screen and (min-width: 1320px) {
+        width: 1320px;
         padding: 0 20px;
     }
 }
