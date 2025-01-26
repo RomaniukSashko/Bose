@@ -11,14 +11,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
     <script type="module" crossorigin src="/Bose/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Bose/assets/index-529288d3.css">
+    <link rel="stylesheet" href="/Bose/assets/index-93679ec7.css">
   </head>
   <body>
     <section class="header">
     <div class="container">
         <a href="./index.html" class="header__link">
             <svg class="header__logo">
-                <use href="../img/symbol-defs.svg#bose-logo"></use>
+                <use href="/Bose/assets/symbol-defs-441c95d5.svg#bose-logo"></use>
             </svg>
         </a>
         <nav class="nav">
@@ -48,7 +48,12 @@
     <section class="design">
     <div class="container">
         <div class="design__flex">
-            <img src="" alt="girl with headphones">
+            <picture>
+                <!-- <source srcset="...@1x.jpg 1x, ...@2x.jpg 2x" media="(min-width: 1280px)">
+                <source srcset="...@1x.jpg 1x, ...@2x.jpg 2x" media="(min-width: 648px)"> -->
+                <source srcset="/Bose/assets/design-phone@1x-70d4b3cc.png 1x, /Bose/assets/design-phone@1x-70d4b3cc.png 2x" media="(max-width: 647px)">
+                <img src="....jpg" alt="girl with headphones" class="design__image">
+            </picture>
             <div class="design__info">
                 <h2 class="design__title">Premium design and comfort</h2>
                 <ul class="design__list">
