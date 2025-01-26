@@ -313,6 +313,9 @@ body {
 .silence {
   padding-top: 170px;
 }
+.silence__img {
+  width: 100%;
+}
 .silence__title {
   color: #E7E7E7;
   font-family: "Gilroy";
