@@ -1,6 +1,15 @@
 .silence{
     padding-top: 170px;
 
+
+    &__img{
+        width: 100%;
+
+        @media screen and (min-width: 648px) {
+            
+        }
+    }
+
     &__title{
         color: $title-color;
 
