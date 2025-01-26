@@ -1,25 +1,33 @@
 .design {
     padding-top: 85px;
     padding-bottom: 85px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+
+    @media screen and (min-width: 708px) {
+        padding-top: 50px;
+        padding-top: 64px;
+    }
+
+    @media screen and (min-width: 1320px) {
+        padding-top: 85px;
+        padding-bottom: 85px;
+    }
 
     &__flex {
         display: flex;
         flex-direction: column-reverse;
-
         @media screen and (min-width: 708px) {
             flex-direction: row;
             justify-content: space-between;
         }
     }
-
     &__image {
         margin-top: 32px;
-
         @media screen and (min-width: 708px) {
             margin-top: 0;
         }
     }
-
     &__title {
         color: $title-color;
         font-size: 24px;
@@ -37,7 +45,6 @@
             letter-spacing: 0.6px;
             width: 294px;
         }
-
         @media screen and (min-width: 1320px) {
             margin-bottom: 50px;
             font-size: 54px;
@@ -47,41 +54,34 @@
             width: 464px;
         }
     }
-
     &__item:nth-child(1) {
         margin-bottom: 24px;
-
         @media screen and (min-width: 708px) {
             margin-bottom: 40px;
         }
     }
-
     &__subtitle {
         color: $title-color;
         font-size: 20px;
         font-weight: 600;
         line-height: 1.25;
         margin-bottom: 16px;
-
         @media screen and (min-width: 1320px) {
             font-size: 28px;
             margin-bottom: 20px;
         }
     }
-
     &__text {
         color: $text-color;
         font-size: 14px;
         font-weight: 400;
         line-height: 1.25;
         width: 280px;
-
         @media screen and (min-width: 708px) {
             font-size: 16px;
             line-height: 1.45;
             width: 294px;
         }
-
         @media screen and (min-width: 1320px) {
             font-size: 20px;
             width: 510px;
