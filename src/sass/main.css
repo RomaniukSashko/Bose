@@ -376,6 +376,66 @@ body {
   }
 }
 
+.ar {
+  padding-top: 170px;
+}
+.ar__title {
+  color: #E7E7E7;
+  font-family: "Gilroy";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.48px;
+}
+@media screen and (min-width: 648px) {
+  .ar__title {
+    font-size: 30px;
+    letter-spacing: 0.6px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .ar__title {
+    font-size: 54px;
+    letter-spacing: 1.08px;
+  }
+}
+.ar__subtitle {
+  color: #E7E7E7;
+  font-family: "Gilroy";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+@media screen and (min-width: 1280px) {
+  .ar__subtitle {
+    font-size: 28px;
+  }
+}
+.ar__text {
+  width: 280px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Gilroy";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+@media screen and (min-width: 648px) {
+  .ar__text {
+    width: 294px;
+    font-size: 16px;
+    line-height: 1.45;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .ar__text {
+    width: 380px;
+    font-size: 20px;
+    line-height: 1.45;
+  }
+}
+.ar__img {
+  width: 100%;
+}
 .footer {
   padding-top: 85px;
   padding-bottom: 77px;
