@@ -287,8 +287,6 @@ body {
 }
 
 .capable {
-  padding-top: 85px;
-  padding-bottom: 85px;
   padding-top: 26px;
   padding-bottom: 26px;
 }
@@ -306,14 +304,11 @@ body {
 }
 .capable__title {
   color: #E7E7E7;
-  font-size: 54px;
   font-weight: 600;
   line-height: 1.2;
-  letter-spacing: 1.08px;
   font-size: 24px;
   letter-spacing: 0.48px;
   text-transform: uppercase;
-  margin-bottom: 50px;
   margin-bottom: 32px;
 }
 @media screen and (min-width: 708px) {
@@ -331,10 +326,7 @@ body {
 }
 .capable__list {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  gap: 20px;
-  height: 127px;
   gap: 16px;
 }
 @media screen and (min-width: 1320px) {
@@ -346,13 +338,10 @@ body {
 }
 .capable__text {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 20px;
   font-size: 14px;
   line-height: 1.25;
   font-weight: 400;
-  line-height: 1.45;
   display: flex;
-  gap: 22px;
   gap: 24px;
   align-items: center;
 }
