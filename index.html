@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
     <script type="module" crossorigin src="/Bose/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Bose/assets/index-8530efb1.css">
+    <link rel="stylesheet" href="/Bose/assets/index-2fe4b270.css">
   </head>
   <body>
     <section class="header">
@@ -42,7 +42,12 @@
         <p class="hero__text">Up to 20 hours of playback</p>
         <h1 class="hero__title">Headphones Bose NC 700</h1>
         <a href="#" class="hero__btn">order</a>
-        <img src="../img/phone/hero-phone@1x.png" alt="headphones" class="hero__img">
+        <picture>
+            <source srcset="/Bose/assets/hero-desktop@1x-71c788f9.png 1x, /Bose/assets/hero-desktop@2x-556c7307.png 2x" media="(min-width: 1320px)">
+            <source srcset="/Bose/assets/hero-tablet@1x-8be959a4.png 1x, /Bose/assets/hero-tablet@2x-0bb0dbbe.png 2x" media="(min-width: 708px)">
+            <source srcset="/Bose/assets/hero-phone@1x-c607883f.png 1x, /Bose/assets/hero-phone@1x-c607883f.png 2x" media="(max-width: 647px)">
+            <img src="../img/phone/hero-phone@1x.png" alt="headphones" class="hero__img">
+        </picture>
     </div>
 </section>
     <section class="design">
