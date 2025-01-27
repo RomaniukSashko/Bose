@@ -180,8 +180,6 @@ body {
 }
 
 .design {
-  padding-top: 85px;
-  padding-bottom: 85px;
   padding-top: 26px;
   padding-bottom: 26px;
 }
@@ -205,6 +203,7 @@ body {
   .design__flex {
     flex-direction: row;
     justify-content: space-between;
+    position: relative;
   }
 }
 .design__image {
@@ -213,6 +212,17 @@ body {
 @media screen and (min-width: 708px) {
   .design__image {
     margin-top: 0;
+    width: 354px;
+    height: 540px;
+    position: absolute;
+    right: 354px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .design__image {
+    width: 590px;
+    height: 616px;
+    right: 660px;
   }
 }
 .design__title {
@@ -228,8 +238,6 @@ body {
 @media screen and (min-width: 708px) {
   .design__title {
     font-size: 30px;
-    font-weight: 600;
-    line-height: 1.2;
     letter-spacing: 0.6px;
     width: 294px;
   }
@@ -238,8 +246,6 @@ body {
   .design__title {
     margin-bottom: 50px;
     font-size: 54px;
-    font-weight: 600;
-    line-height: 1.2;
     letter-spacing: 1.08px;
     width: 464px;
   }
@@ -250,6 +256,16 @@ body {
 @media screen and (min-width: 708px) {
   .design__item:nth-child(1) {
     margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 708px) {
+  .design__item:nth-child(2) {
+    margin-bottom: 59px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .design__item:nth-child(2) {
+    margin-bottom: 25px;
   }
 }
 .design__subtitle {
@@ -287,8 +303,6 @@ body {
 }
 
 .capable {
-  padding-top: 85px;
-  padding-bottom: 85px;
   padding-top: 26px;
   padding-bottom: 26px;
 }
@@ -306,14 +320,11 @@ body {
 }
 .capable__title {
   color: #E7E7E7;
-  font-size: 54px;
   font-weight: 600;
   line-height: 1.2;
-  letter-spacing: 1.08px;
   font-size: 24px;
   letter-spacing: 0.48px;
   text-transform: uppercase;
-  margin-bottom: 50px;
   margin-bottom: 32px;
 }
 @media screen and (min-width: 708px) {
@@ -331,10 +342,7 @@ body {
 }
 .capable__list {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  gap: 20px;
-  height: 127px;
   gap: 16px;
 }
 @media screen and (min-width: 1320px) {
@@ -346,13 +354,10 @@ body {
 }
 .capable__text {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 20px;
   font-size: 14px;
   line-height: 1.25;
   font-weight: 400;
-  line-height: 1.45;
   display: flex;
-  gap: 22px;
   gap: 24px;
   align-items: center;
 }
@@ -504,21 +509,45 @@ body {
   width: 100%;
 }
 .footer {
-  padding-top: 85px;
-  padding-bottom: 77px;
+  padding-top: 46px;
+  padding-bottom: 52px;
+}
+@media screen and (min-width: 708px) {
+  .footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .footer {
+    padding-top: 85px;
+    padding-bottom: 77px;
+  }
 }
 .footer > .container {
   display: flex;
 }
 .footer__list {
   display: flex;
-  gap: 50px;
+}
+@media screen and (min-width: 1320px) {
+  .footer__list {
+    height: auto;
+    flex-direction: row;
+    gap: 50px;
+  }
 }
 .footer__link {
   color: rgba(255, 255, 255, 0.3);
-  font-size: 16px;
   font-weight: 400;
   line-height: 1.25;
+  font-size: 14px;
+  font-style: normal;
+}
+@media screen and (min-width: 1320px) {
+  .footer__link {
+    font-size: 16px;
+  }
 }
 .footer__tel {
   color: rgba(255, 255, 255, 0.8);

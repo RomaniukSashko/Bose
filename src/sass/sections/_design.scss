@@ -1,6 +1,4 @@
 .design {
-    padding-top: 85px;
-    padding-bottom: 85px;
     padding-top: 26px;
     padding-bottom: 26px;
 
@@ -21,6 +19,7 @@
         @media screen and (min-width: 708px) {
             flex-direction: row;
             justify-content: space-between;
+            position: relative;
         }
     }
 
@@ -29,6 +28,16 @@
 
         @media screen and (min-width: 708px) {
             margin-top: 0;
+            width: 354px;
+            height: 540px;
+            position: absolute;
+            right: 354px;
+        }
+
+        @media screen and (min-width: 1320px) {
+            width: 590px;
+            height: 616px;
+            right: 660px;
         }
     }
 
@@ -41,10 +50,9 @@
         text-transform: uppercase;
         width: 206px;
         margin-bottom: 32px;
+
         @media screen and (min-width: 708px) {
             font-size: 30px;
-            font-weight: 600;
-            line-height: 1.2;
             letter-spacing: 0.6px;
             width: 294px;
         }
@@ -52,19 +60,32 @@
         @media screen and (min-width: 1320px) {
             margin-bottom: 50px;
             font-size: 54px;
-            font-weight: 600;
-            line-height: 1.2;
             letter-spacing: 1.08px;
             width: 464px;
         }
     }
 
-    &__item:nth-child(1) {
-        margin-bottom: 24px;
+    &__item {
 
-        @media screen and (min-width: 708px) {
-            margin-bottom: 40px;
+        &:nth-child(1) {
+            margin-bottom: 24px;
+
+            @media screen and (min-width: 708px) {
+                margin-bottom: 40px;
+            }
         }
+
+        &:nth-child(2) {
+
+            @media screen and (min-width: 708px) {
+                margin-bottom: 59px;
+            }
+
+            @media screen and (min-width: 1320px) {
+                margin-bottom: 25px;
+            }
+        }
+
     }
 
     &__subtitle {
