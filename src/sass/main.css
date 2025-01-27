@@ -178,6 +178,18 @@ body {
   max-width: 280px;
   height: 240px;
 }
+@media screen and (min-width: 708px) {
+  .hero__img {
+    max-width: 354px;
+    height: 394px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .hero__img {
+    max-width: 700px;
+    height: 598px;
+  }
+}
 
 .design {
   padding-top: 26px;
