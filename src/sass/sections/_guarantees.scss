@@ -1,0 +1,98 @@
+.guarantees {
+    padding: 52px 0;
+
+    @media screen and (min-width: 708px) {
+        display: flex;
+        
+    }
+
+    &__title {
+        color: $title-color;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.20;
+        letter-spacing: 0.48px;
+        text-transform: uppercase;
+        margin-bottom: 32px;
+
+        @media screen and (min-width: 708px) {
+            font-size: 30px;
+            letter-spacing: 0.6px;
+            
+        }
+
+
+    }
+
+    &__subtitle {
+        color: $title-color;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.25;
+        max-width: 152px;
+        margin-bottom: 16px;
+
+        @media screen and (min-width: 708px) {
+            max-width: 289px;
+            margin-bottom: 20px;
+        }
+
+    }
+
+    &__subtitle::before {
+        content: "";
+        display: block;
+        width: 13px;
+        height: 13px;
+        background-color: $button-color;
+        border-radius: 50%;
+        margin-bottom: 24px;
+    }
+
+
+    &__desc {
+        color: $text-color;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.25;
+        max-width: 280px;
+        margin-bottom: 24px;
+
+        @media screen and (min-width: 708px) {
+            max-width: 294px;
+            margin-bottom: 55px;
+        }
+    }
+
+    &__desc-s {
+        color: $text-color;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.25;
+        max-width: 280px;
+        margin-bottom: 32px;
+
+        @media screen and (min-width: 708px) {
+            font-size: 16px;
+            line-height: 1.45; 
+            max-width: 294px;
+            margin-bottom: 0;
+        }
+
+    }
+
+    
+
+    &__img {
+        max-width: 100%;
+        height: 268px;
+
+        @media screen and (min-width: 708px) {
+            max-width: 100%;
+            height: 442px;;
+        }
+
+    }
+
+
+}
