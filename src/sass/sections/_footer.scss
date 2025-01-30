@@ -13,13 +13,14 @@
     }
 
     & > .container{
-        display: flex;
         // flex-direction: column;
 
-        // @media screen and (min-width: 708px) {
-        //     flex-direction: row;
-        //     gap: 145px;
-        // }
+        @media screen and (min-width: 708px) {
+            display: flex;
+            flex-direction: row;
+            // justify-content: space-between;
+            align-items: last baseline;
+        }
 
         // @media screen and (min-width: 1320px) {
         //     gap: 267px;
@@ -28,22 +29,43 @@
 
     &__list {
         display: flex;
-        // flex-direction: column;
-        // flex-wrap: wrap;
-        // flex-basis: calc((100% - 45px) / 2);
+        flex-direction: column;
+        flex-wrap: wrap;
+        column-gap: 45px;
         // row-gap: 24px;
-        // column-gap: 45px;
-        // height: 102px;
+        height: 102px;
+        margin-bottom: 52px;
 
-        // @media screen and (min-width: 708px) {
-        //     height: 102px;
-        // }
+        @media screen and (min-width: 708px) {
+            column-gap: 139px;
+            // row-gap: 0;
+            margin-bottom: 0;
+        }
+
 
         @media screen and (min-width: 1320px) {
             height: auto;
             flex-direction: row;
-            gap: 50px;
+            column-gap: 50px;
+            row-gap: 0;
         }
+    }
+
+    &__item {
+        flex-basis: calc((100% - 45px) / 2);
+
+        &:nth-child(n+4) {
+            text-align: right;
+
+            @media screen and (min-width: 708px) {
+                text-align: left;
+            }
+        }
+
+        @media screen and (min-width: 1320px) {
+            flex-basis: auto;
+        }
+
     }
 
     &__link {
@@ -64,15 +86,14 @@
         font-size: 16px;
         font-weight: 400;
         line-height: 1.1875;
-        margin-left: auto;
-        // margin-top: auto;
+        // margin-top: 52px;
 
-        // @media screen and (min-width: 708px) {
-            
-        // }
+        @media screen and (min-width: 708px) {
+            margin-left: auto;
+        }
 
-        // @media screen and (min-width: 1320px) {
-            
-        // }
+        @media screen and (min-width: 1320px) {
+            margin-top: auto;
+        }
     }
 }

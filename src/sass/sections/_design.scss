@@ -5,6 +5,7 @@
     @media screen and (min-width: 708px) {
         padding-top: 50px;
         padding-top: 64px;
+        position: relative;
     }
 
     @media screen and (min-width: 1320px) {
@@ -21,23 +22,29 @@
             justify-content: space-between;
             position: relative;
         }
+
+        @media screen and (min-width: 1320px) {
+            right: 110px;
+        }
     }
 
     &__image {
         margin-top: 32px;
+        width: 280px;
+        height: 293px;
 
         @media screen and (min-width: 708px) {
             margin-top: 0;
             width: 354px;
             height: 540px;
             position: absolute;
-            right: 354px;
+            left: -60px;
         }
 
         @media screen and (min-width: 1320px) {
             width: 590px;
             height: 616px;
-            right: 660px;
+            left: auto;
         }
     }
 
