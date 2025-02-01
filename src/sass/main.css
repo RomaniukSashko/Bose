@@ -416,13 +416,13 @@ body {
   line-height: 1.2;
   letter-spacing: 0.48px;
 }
-@media screen and (min-width: 648px) {
+@media screen and (min-width: 708px) {
   .silence__title {
     font-size: 30px;
     letter-spacing: 0.6px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1320px) {
   .silence__title {
     font-size: 54px;
     letter-spacing: 1.08px;
@@ -435,7 +435,7 @@ body {
   font-weight: 600;
   line-height: 1.25;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1320px) {
   .silence__subtitle {
     font-size: 28px;
   }
@@ -448,21 +448,21 @@ body {
   line-height: 1.25;
   width: 280px;
 }
-@media screen and (min-width: 648px) {
+@media screen and (min-width: 708px) {
   .silence__text {
     font-size: 16px;
     line-height: 1.45;
     width: 294px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1320px) {
   .silence__text {
     font-size: 20px;
     line-height: 1.45;
     width: 492px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1320px) {
   .silence__text2 {
     width: 510px;
   }
@@ -479,13 +479,13 @@ body {
   line-height: 1.2;
   letter-spacing: 0.48px;
 }
-@media screen and (min-width: 648px) {
+@media screen and (min-width: 708px) {
   .ar__title {
     font-size: 30px;
     letter-spacing: 0.6px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1320px) {
   .ar__title {
     font-size: 54px;
     letter-spacing: 1.08px;
@@ -498,7 +498,7 @@ body {
   font-weight: 600;
   line-height: 1.25;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1320px) {
   .ar__subtitle {
     font-size: 28px;
   }
@@ -511,14 +511,14 @@ body {
   font-weight: 400;
   line-height: 1.25;
 }
-@media screen and (min-width: 648px) {
+@media screen and (min-width: 708px) {
   .ar__text {
     width: 294px;
     font-size: 16px;
     line-height: 1.45;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1320px) {
   .ar__text {
     width: 380px;
     font-size: 20px;
@@ -528,6 +528,17 @@ body {
 .ar__img {
   width: 100%;
 }
+@media screen and (min-width: 708px) {
+  .ar__img {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .ar__img {
+    width: 700px;
+  }
+}
+
 .guarantees {
   padding: 52px 0;
 }
