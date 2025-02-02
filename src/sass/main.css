@@ -139,6 +139,18 @@ body {
   color: white;
 }
 
+@media screen and (min-width: 1320px) {
+  .hero {
+    padding-bottom: 98px;
+  }
+}
+@media screen and (min-width: 708px) {
+  .hero__box {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+}
 .hero__text {
   color: rgba(255, 255, 255, 0.8);
   font-size: 14px;
@@ -147,9 +159,38 @@ body {
   max-width: 222px;
   margin-bottom: 16px;
 }
+@media screen and (min-width: 708px) {
+  .hero__text {
+    font-size: 16px;
+    line-height: 1.45;
+    max-width: 289px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .hero__text {
+    max-width: 321px;
+    margin-bottom: 36px;
+  }
+}
 .hero__text:nth-child(2) {
   max-width: 93px;
   margin-bottom: 32px;
+}
+@media screen and (min-width: 708px) {
+  .hero__text:nth-child(2) {
+    max-width: 110px;
+    margin-bottom: 105px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .hero__text:nth-child(2) {
+    margin-bottom: 94px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .hero__btn-title-box {
+    padding-left: 110px;
+  }
 }
 .hero__title {
   color: #E7E7E7;
@@ -161,9 +202,24 @@ body {
   text-transform: uppercase;
   margin-bottom: 32px;
 }
+@media screen and (min-width: 708px) {
+  .hero__title {
+    font-size: 38px;
+    letter-spacing: 0.84px;
+    max-width: 289px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .hero__title {
+    font-size: 74px;
+    letter-spacing: 1.48px;
+    text-transform: uppercase;
+    max-width: 674px;
+  }
+}
 .hero__btn {
   display: inline-block;
-  max-width: 280px;
   padding: 19px 113px;
   color: rgba(255, 255, 255, 0.9);
   font-size: 16px;
@@ -174,6 +230,17 @@ body {
   background-color: #DF3D3A;
   margin-bottom: 32px;
 }
+@media screen and (min-width: 708px) {
+  .hero__btn {
+    margin-bottom: 0;
+    padding: 19px 120px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .hero__btn {
+    padding: 22px 167px;
+  }
+}
 .hero__img {
   max-width: 280px;
   height: 240px;
@@ -182,12 +249,16 @@ body {
   .hero__img {
     max-width: 354px;
     height: 394px;
+    position: absolute;
+    right: -20px;
+    top: 0;
   }
 }
 @media screen and (min-width: 1320px) {
   .hero__img {
     max-width: 700px;
     height: 598px;
+    right: -90px;
   }
 }
 
