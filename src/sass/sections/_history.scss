@@ -1,15 +1,9 @@
 .history {
     padding-bottom: 52px;
-    background-image: url("../img/phone/history-phone-background@1x.png");
+    background-image: url("../img/phone/history-phone-background@2x.png");
     background-repeat: no-repeat;
-    background-position-y: 1px;
-    background-position-x: 200px;
-    background-attachment: fixed;
-    // проблема з фоном
-
-
-
-
+    background-size: 120px;
+    background-position: top right calc((100% - 220px)/2);
 
     &__title {
         color: $title-color;
