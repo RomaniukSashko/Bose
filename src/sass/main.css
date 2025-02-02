@@ -479,6 +479,12 @@ body {
 .silence__img {
   width: 100%;
 }
+@media screen and (min-width: 1320px) {
+  .silence__img {
+    width: 1440px;
+    height: 524px;
+  }
+}
 .silence__title {
   color: #E7E7E7;
   font-family: "Gilroy";
@@ -497,6 +503,7 @@ body {
   .silence__title {
     font-size: 54px;
     letter-spacing: 1.08px;
+    padding-left: 533px;
   }
 }
 .silence__subtitle {
