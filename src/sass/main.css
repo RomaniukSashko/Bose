@@ -52,6 +52,7 @@ img {
 body {
   background-color: #191919;
   font-family: "Gilroy";
+  scroll-behavior: smooth;
 }
 
 .header {
