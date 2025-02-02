@@ -1,4 +1,21 @@
 .hero {
+
+@media screen and (min-width: 1320px) {
+    padding-bottom: 98px;
+}
+
+    &__box {
+
+        @media screen and (min-width: 708px) {
+            display: flex;
+            align-items: center;
+            position: relative;
+        }   
+    }
+
+    &__text-box {
+    }
+
     &__text {
         color: $text-color;
         font-size: 14px;
@@ -6,11 +23,38 @@
         line-height: 1.25;
         max-width: 222px;
         margin-bottom: 16px;
+
+        @media screen and (min-width: 708px) {
+            font-size: 16px;
+            line-height: 1.45;
+            max-width: 289px;
+        }
+
+        @media screen and (min-width: 1320px) {
+            max-width: 321px;
+            margin-bottom: 36px;
+        }
+
     }
 
     &__text:nth-child(2) {
         max-width: 93px;
         margin-bottom: 32px;
+
+        @media screen and (min-width: 708px) {
+            max-width: 110px;
+            margin-bottom: 105px;
+        }
+
+        @media screen and (min-width: 1320px) {
+            margin-bottom: 94px;
+        }
+    }
+
+    &__btn-title-box {
+        @media screen and (min-width: 1320px) {
+            padding-left: 110px;
+        }
     }
 
     &__title {
@@ -22,11 +66,25 @@
         letter-spacing: 0.68px;
         text-transform: uppercase;
         margin-bottom: 32px;
+
+        @media screen and (min-width: 708px) {
+            font-size: 38px;
+            letter-spacing: 0.84px;
+            max-width: 289px;
+            margin-bottom: 40px;
+        }    
+
+        @media screen and (min-width: 1320px) {
+            font-size: 74px;
+            letter-spacing: 1.48px;
+            text-transform: uppercase;
+            max-width: 674px;
+        }
+
     }
 
     &__btn {
         display: inline-block; 
-        max-width: 280px;
         padding: 19px 113px;
         color: $button-text;
         font-size: 16px;
@@ -36,6 +94,16 @@
         text-transform: uppercase;
         background-color: $button-color;
         margin-bottom: 32px;
+
+        @media screen and (min-width: 708px) {
+            margin-bottom: 0;
+            padding: 19px 120px;
+        }
+
+        @media screen and (min-width: 1320px) {
+            padding: 22px 167px;
+        }
+
     }
 
     &__img {
@@ -45,11 +113,15 @@
         @media screen and (min-width: 708px) {
             max-width: 354px;
             height: 394px;
+            position: absolute;
+            right: -20px;
+            top: 0;
         }
 
         @media screen and (min-width: 1320px) {
             max-width: 700px;
             height: 598px;
+            right: -90px;
         }
 
 
