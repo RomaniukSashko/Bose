@@ -48,6 +48,16 @@
         background-color: transparent;
         border: none;
 
+        &:hover, &:focus {
+
+            .header__burger {
+                fill: $button-color;
+                transition-property: fill;
+                transition-duration: 250ms;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            }
+        }
+
         @media screen and (min-width: 1320px) {
             display: none;
         }
@@ -78,8 +88,19 @@
         font-weight: 400;
         line-height: 1.1875;
 
-        // &:hover, &:focus {
-        //     color: white;
-        // }
+        &:hover, &:focus {
+            color: transparent;
+            background: linear-gradient(to right, $button-color, #ff9090, $button-color); 
+            background-size: cover; 
+            background-position: center; 
+            background-clip: text; 
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            
+            @media screen and (min-width: 1320px) {
+            
+            }
+        }
     }
 }
