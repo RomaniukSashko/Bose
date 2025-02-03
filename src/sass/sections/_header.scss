@@ -19,20 +19,18 @@
     }
 
     &__link {
-        width: 100px;
-        height: 12px;
 
         @media screen and (min-width: 1320px) {
             width: 130px;
             height: 15.236px;
         }
 
-        &:hover {
+        // &:hover {
 
-            .header__logo {
-                fill: $text-color;
-            }
-        }
+        //     .header__logo {
+        //         fill: $text-color;
+        //     }
+        // }
     }
 
     &__logo {
@@ -49,8 +47,6 @@
     &__button {
         background-color: transparent;
         border: none;
-        width: 22px;
-        height: 11.711px;
         padding: 0;
 
         @media screen and (min-width: 1320px) {
@@ -83,8 +79,8 @@
         font-weight: 400;
         line-height: 1.1875;
 
-        &:hover, &:focus {
-            color: white;
-        }
+        // &:hover, &:focus {
+        //     color: white;
+        // }
     }
 }

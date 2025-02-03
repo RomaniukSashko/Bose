@@ -76,18 +76,11 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.header__link {
-  width: 100px;
-  height: 12px;
-}
 @media screen and (min-width: 1320px) {
   .header__link {
     width: 130px;
     height: 15.236px;
   }
-}
-.header__link:hover .header__logo {
-  fill: rgba(255, 255, 255, 0.8);
 }
 .header__logo {
   fill: #E7E7E7;
@@ -103,8 +96,6 @@ body {
 .header__button {
   background-color: transparent;
   border: none;
-  width: 22px;
-  height: 11.711px;
   padding: 0;
 }
 @media screen and (min-width: 1320px) {
@@ -135,9 +126,6 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.1875;
-}
-.nav__link:hover, .nav__link:focus {
-  color: white;
 }
 
 @media screen and (min-width: 1320px) {
@@ -843,5 +831,50 @@ body {
 @media screen and (min-width: 1320px) {
   .footer__tel {
     margin-top: auto;
+  }
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #191919;
+}
+@media screen and (min-width: 708px) {
+  .menu {
+    height: 367px;
+  }
+}
+.menu__logo {
+  fill: #E7E7E7;
+  width: 100px;
+  height: 12px;
+}
+.menu__close {
+  background-color: transparent;
+  border: none;
+}
+.menu__icon {
+  fill: rgba(255, 255, 255, 0.8);
+  width: 24px;
+  height: 24px;
+}
+.menu__link {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+@media screen and (min-width: 708px) {
+  .menu__link {
+    font-size: 16px;
+    line-height: 1.1875;
   }
 }/*# sourceMappingURL=main.css.map */

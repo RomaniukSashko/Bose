@@ -1,18 +1,22 @@
 <div class="menu is-hidden" data-header-modal>
-    <a href="" class="menu__logo">
-        <svg class="logo__icon">
-            <use href=""></use>
-        </svg>
-    </a>
-    <button type="button" class="menu__close" data-modal-header-close>
-        <svg class="menu__icon">
-            <use href=""></use>
-        </svg>
-    </button>
-    <ul class="menu__list">
-        <li class="menu__item"><a href="#" class="menu__link">Characteristics</a></li>
-        <li class="menu__item"><a href="#" class="menu__link">History</a></li>
-        <li class="menu__item"><a href="#" class="menu__link">Reviews</a></li>
-        <li class="menu__item"><a href="#" class="menu__link">Payment and delivery</a></li>
-    </ul>
+    <div class="container">
+        <div class="menu__flex">
+            <a href="./index.html" class="menu__logol" aria-label="Logotype and link to main page">
+                <svg class="menu__logo">
+                    <use href="./img/symbol-defs.svg#bose-logo"></use>
+                </svg>
+            </a>
+            <button type="button" class="menu__close" data-modal-header-close aria-label="Button to close menu">
+                <svg class="menu__icon">
+                    <use href="./img/symbol-defs.svg#menu-close"></use>
+                </svg>
+            </button>
+        </div>
+        <ul class="menu__list">
+            <li class="menu__item"><a href="#model" class="menu__link" aria-label="Link to characteristics of Bose NC 700">Characteristics</a></li>
+            <li class="menu__item"><a href="#history" class="menu__link" aria-label="Link to history section">History</a></li>
+            <li class="menu__item"><a href="#reviews" class="menu__link" aria-label="Link to reviews section">Reviews</a></li>
+            <li class="menu__item"><a href="#model" class="menu__link" aria-label="Link to order section">Payment and delivery</a></li>
+        </ul>
+    </div>
 </div>
