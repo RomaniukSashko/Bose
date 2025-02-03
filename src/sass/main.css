@@ -52,6 +52,16 @@ html {
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: #191919;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #DF3D3A;
+}
+
 .header {
   padding-top: 30px;
   padding-bottom: 32px;
@@ -94,6 +104,12 @@ html {
   background-color: transparent;
   border: none;
 }
+.header__button:hover .header__burger, .header__button:focus .header__burger {
+  fill: #DF3D3A;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 @media screen and (min-width: 1320px) {
   .header__button {
     display: none;
@@ -123,7 +139,17 @@ html {
   font-weight: 400;
   line-height: 1.1875;
 }
-
+.nav__link:hover, .nav__link:focus {
+  color: transparent;
+  background: linear-gradient(to right, #DF3D3A, #ff9090, #DF3D3A);
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+          background-clip: text;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 @media screen and (min-width: 1320px) {
   .hero {
     padding-bottom: 98px;
@@ -807,6 +833,17 @@ html {
   font-size: 14px;
   font-style: normal;
 }
+.footer__link:hover, .footer__link:focus {
+  color: transparent;
+  background: linear-gradient(to right, rgba(223, 61, 58, 0.6), rgba(255, 144, 144, 0.6), rgba(223, 61, 58, 0.6));
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+          background-clip: text;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 @media screen and (min-width: 1320px) {
   .footer__link {
     font-size: 16px;
@@ -818,6 +855,17 @@ html {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.1875;
+}
+.footer__tel:hover, .footer__tel:focus {
+  color: transparent;
+  background: linear-gradient(to right, #DF3D3A, #ff9090, #DF3D3A);
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+          background-clip: text;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 708px) {
   .footer__tel {
@@ -832,8 +880,8 @@ html {
 
 .is-hidden {
   visibility: hidden;
-  opacity: 0;
   pointer-events: none;
+  transform: translateY(-100%);
 }
 
 .menu {
@@ -844,6 +892,9 @@ html {
   background-color: #191919;
   padding-top: 24px;
   padding-bottom: 100%;
+  transition-property: transform visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 708px) {
   .menu {
@@ -867,6 +918,12 @@ html {
   background-color: transparent;
   border: none;
 }
+.menu__close:hover .menu__icon, .menu__close:focus .menu__icon {
+  fill: #DF3D3A;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .menu__icon {
   fill: rgba(255, 255, 255, 0.8);
   width: 24px;
@@ -883,6 +940,17 @@ html {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.25;
+}
+.menu__link:hover, .menu__link:focus {
+  color: transparent;
+  background: linear-gradient(to right, #DF3D3A, #ff9090, #DF3D3A);
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+          background-clip: text;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 708px) {
   .menu__link {

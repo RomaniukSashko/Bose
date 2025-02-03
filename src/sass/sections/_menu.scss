@@ -1,8 +1,7 @@
 .is-hidden {
     visibility: hidden;
-    opacity: 0;
     pointer-events: none;
-    // transform: translateY(100%);
+    transform: translateY(-100%);
 }
 
 .menu {
@@ -13,6 +12,9 @@
     background-color: $bcg-color;
     padding-top: 24px;
     padding-bottom: 100%;
+    transition-property: transform visibility;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (min-width: 708px) {
         height: 367px;
@@ -37,6 +39,16 @@
     &__close {
         background-color: transparent;
         border: none;
+
+        &:hover, &:focus {
+
+            .menu__icon {
+                fill: $button-color;
+                transition-property: fill;
+                transition-duration: 250ms;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            }
+        }
     }
 
     &__icon {
@@ -57,6 +69,17 @@
         font-size: 14px;
         font-weight: 400;
         line-height: 1.25;
+
+        &:hover, &:focus {
+            color: transparent;
+            background: linear-gradient(to right, $button-color, #ff9090, $button-color); 
+            background-size: cover; 
+            background-position: center; 
+            background-clip: text; 
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
 
         @media screen and (min-width: 708px) {
             font-size: 16px;
