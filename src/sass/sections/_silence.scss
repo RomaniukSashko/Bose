@@ -2,6 +2,10 @@
     padding-top: 170px;
 
     &__box{
+        @media screen and (min-width: 708px) {
+            position: relative;
+
+        }
         @media screen and (min-width: 1320px) {
             position: relative;
 
@@ -14,7 +18,10 @@
         width: 100%;
 
         @media screen and (min-width: 708px) {
-            
+            width: 768px;
+            height: 293px;
+            position: absolute;
+            left: 0px;
         }
 
         @media screen and (min-width: 1320px) {
@@ -34,11 +41,16 @@ font-size: 24px;
 font-weight: 600;
 line-height: 1.2;
 letter-spacing: 0.48px;
+text-transform: uppercase;
+// width: 277px;
+margin-bottom: 32px;
 
 
 @media screen and (min-width: 708px) {
 font-size: 30px;
 letter-spacing: 0.6px;
+padding-left: 361px;
+
 }
 
 @media screen and (min-width: 1320px) {
@@ -52,6 +64,12 @@ letter-spacing: 0.6px;
     &__list{
         display: block;
 
+
+        @media screen and (min-width: 708px) {
+            display: flex;
+            
+            }
+
         @media screen and (min-width: 1320px) {
             display: flex;
             }
@@ -60,6 +78,9 @@ letter-spacing: 0.6px;
     &__item{
 
         &:nth-child(1){
+            @media screen and (min-width: 708px) {
+                margin-right: 60px;
+              }
         @media screen and (min-width: 1320px) {
               margin-right: 40px;
             }
@@ -73,6 +94,14 @@ letter-spacing: 0.6px;
         font-size: 20px;
         font-weight: 600;
         line-height: 1.25;
+        margin-top: 32px;
+        margin-bottom: 16px;
+
+
+        @media screen and (min-width: 708px) {
+            // margin-top: 32px;
+            margin-top: 325px;
+            } 
             
             @media screen and (min-width: 1320px) {
                 font-size: 28px;
