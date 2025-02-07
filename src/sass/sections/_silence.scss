@@ -1,16 +1,35 @@
 .silence{
     padding-top: 170px;
 
+    &__box{
+        @media screen and (min-width: 708px) {
+            position: relative;
+
+        }
+        @media screen and (min-width: 1320px) {
+            position: relative;
+
+        }
+    }
+    
+
 
     &__img{
         width: 100%;
 
         @media screen and (min-width: 708px) {
-            
+            width: 768px;
+            height: 293px;
+            position: absolute;
+            left: 0px;
         }
 
         @media screen and (min-width: 1320px) {
-            
+            width: 1440px;
+            height: 524px;
+            position: absolute;
+            left: 0px;
+
         }
     }
 
@@ -22,17 +41,50 @@ font-size: 24px;
 font-weight: 600;
 line-height: 1.2;
 letter-spacing: 0.48px;
+text-transform: uppercase;
+// width: 277px;
+margin-bottom: 32px;
 
 
 @media screen and (min-width: 708px) {
 font-size: 30px;
 letter-spacing: 0.6px;
+padding-left: 361px;
+
 }
 
 @media screen and (min-width: 1320px) {
     font-size: 54px;
     letter-spacing: 1.08px;
+    padding-left: 533px;
+    margin-bottom: 50px;
     }
+    }
+
+    &__list{
+        display: block;
+
+
+        @media screen and (min-width: 708px) {
+            display: flex;
+            
+            }
+
+        @media screen and (min-width: 1320px) {
+            display: flex;
+            }
+    }
+
+    &__item{
+
+        &:nth-child(1){
+            @media screen and (min-width: 708px) {
+                margin-right: 60px;
+              }
+        @media screen and (min-width: 1320px) {
+              margin-right: 40px;
+            }
+        }
     }
 
     &__subtitle{
@@ -42,11 +94,33 @@ letter-spacing: 0.6px;
         font-size: 20px;
         font-weight: 600;
         line-height: 1.25;
+        margin-top: 32px;
+        margin-bottom: 16px;
+        
+
+
+
+        @media screen and (min-width: 708px) {
+            // margin-top: 32px;
+            } 
             
             @media screen and (min-width: 1320px) {
                 font-size: 28px;
+                // margin-top: 50px;
+                margin-bottom: 20px;
                 } 
+
     }
+
+    &__subtitle1{
+            @media screen and (min-width: 708px) {
+                margin-top: 325px;
+              }
+        @media screen and (min-width: 1320px) {
+            margin-top: 574px;
+            }
+    }
+
     &__text{
         color: $text-color;
 
