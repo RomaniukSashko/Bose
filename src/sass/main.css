@@ -555,13 +555,13 @@ html {
   }
 }
 @media screen and (min-width: 708px) {
-  .silence__item:nth-child(1) {
-    margin-right: 60px;
+  .silence__item:nth-child(2) {
+    margin-left: 60px;
   }
 }
 @media screen and (min-width: 1320px) {
-  .silence__item:nth-child(1) {
-    margin-right: 40px;
+  .silence__item:nth-child(2) {
+    margin-left: 40px;
   }
 }
 .silence__subtitle {
@@ -573,19 +573,15 @@ html {
   margin-top: 32px;
   margin-bottom: 16px;
 }
-@media screen and (min-width: 1320px) {
-  .silence__subtitle {
-    font-size: 28px;
-    margin-bottom: 20px;
-  }
-}
 @media screen and (min-width: 708px) {
-  .silence__subtitle1 {
+  .silence__subtitle {
     margin-top: 325px;
   }
 }
 @media screen and (min-width: 1320px) {
-  .silence__subtitle1 {
+  .silence__subtitle {
+    font-size: 28px;
+    margin-bottom: 20px;
     margin-top: 574px;
   }
 }
