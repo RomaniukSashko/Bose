@@ -615,6 +615,17 @@ html {
 
 .ar {
   padding-top: 170px;
+  padding-bottom: 85px;
+}
+@media screen and (min-width: 708px) {
+  .ar__box {
+    position: relative;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .ar__box {
+    position: relative;
+  }
 }
 .ar__title {
   color: #E7E7E7;
@@ -623,6 +634,8 @@ html {
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: 0.48px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
 }
 @media screen and (min-width: 708px) {
   .ar__title {
@@ -634,6 +647,7 @@ html {
   .ar__title {
     font-size: 54px;
     letter-spacing: 1.08px;
+    margin-bottom: 50px;
   }
 }
 .ar__subtitle {
@@ -642,10 +656,12 @@ html {
   font-size: 20px;
   font-weight: 600;
   line-height: 1.25;
+  margin-bottom: 16px;
 }
 @media screen and (min-width: 1320px) {
   .ar__subtitle {
     font-size: 28px;
+    margin-bottom: 20px;
   }
 }
 .ar__text {
@@ -655,12 +671,15 @@ html {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.25;
+  margin-bottom: 32px;
 }
 @media screen and (min-width: 708px) {
   .ar__text {
     width: 294px;
     font-size: 16px;
     line-height: 1.45;
+    padding-bottom: 50px;
+    margin-bottom: 0px;
   }
 }
 @media screen and (min-width: 1320px) {
@@ -668,6 +687,7 @@ html {
     width: 380px;
     font-size: 20px;
     line-height: 1.45;
+    padding-bottom: 242px;
   }
 }
 .ar__img {
@@ -676,11 +696,19 @@ html {
 @media screen and (min-width: 708px) {
   .ar__img {
     width: 354px;
+    height: 297px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
   }
 }
 @media screen and (min-width: 1320px) {
   .ar__img {
     width: 700px;
+    height: 586px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
   }
 }
 

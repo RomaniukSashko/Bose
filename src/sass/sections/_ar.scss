@@ -1,5 +1,18 @@
 .ar{
     padding-top: 170px;
+    padding-bottom: 85px;
+    
+
+    &__box{
+        @media screen and (min-width: 708px) {
+            position: relative;
+
+        }
+        @media screen and (min-width: 1320px) {
+            position: relative;
+
+        }
+    }
 
     &__title{
         color: $title-color;
@@ -8,6 +21,8 @@ font-size: 24px;
 font-weight: 600;
 line-height: 1.2;
 letter-spacing: 0.48px;
+text-transform: uppercase;
+margin-bottom: 32px;
 
         @media screen and (min-width: 708px) {
             font-size: 30px;
@@ -17,6 +32,7 @@ letter-spacing: 0.48px;
             @media screen and (min-width: 1320px) {
                 font-size: 54px;
                 letter-spacing: 1.08px;
+                margin-bottom: 50px;
                 }
     }
 
@@ -27,6 +43,7 @@ letter-spacing: 0.48px;
         font-size: 20px;
         font-weight: 600;
         line-height: 1.25;
+        margin-bottom: 16px;
 
 
         @media screen and (min-width: 708px) {
@@ -35,6 +52,7 @@ letter-spacing: 0.48px;
             
             @media screen and (min-width: 1320px) {
                 font-size: 28px;
+                margin-bottom: 20px;
                 }
 
     }
@@ -47,17 +65,21 @@ font-family: "Gilroy";
 font-size: 14px;
 font-weight: 400;
 line-height: 1.25;
+margin-bottom: 32px;
 
         @media screen and (min-width: 708px) {
             width: 294px;
             font-size: 16px;
             line-height: 1.45;
+            padding-bottom: 50px;
+            margin-bottom: 0px;
         }
         
         @media screen and (min-width: 1320px) {
             width: 380px;
             font-size: 20px;
             line-height: 1.45;
+            padding-bottom: 242px;
             }
     }
 
@@ -65,10 +87,18 @@ line-height: 1.25;
         width: 100%;
         @media screen and (min-width: 708px) {
             width: 354px;
+            height: 297px;
+            position: absolute;
+            top: 0px;
+            right: 0px;
         }
         
         @media screen and (min-width: 1320px) {
             width: 700px;
+            height: 586px;
+            position: absolute;
+            top: 0px;
+            right: 0px;
             }
     }
 }
