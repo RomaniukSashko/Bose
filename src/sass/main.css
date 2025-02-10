@@ -43,9 +43,25 @@ img {
   }
 }
 
+@font-face {
+  font-family: "Gilroy";
+  src: url(../fonts/Gilroy-Regular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy Semibold";
+  src: url(../fonts/Gilroy-Semibold.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   background-color: #191919;
   font-family: "Gilroy";
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Gilroy Semibold";
 }
 
 html {
@@ -60,6 +76,21 @@ html {
 
 ::-webkit-scrollbar-thumb {
   background: #DF3D3A;
+}
+
+.scroll {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  background-color: #DF3D3A;
+  border: none;
+  border-radius: 50%;
+}
+.scroll__icon {
+  fill: white;
+  width: 20px;
+  height: 20px;
 }
 
 .header {
@@ -83,11 +114,20 @@ html {
   justify-content: space-between;
   align-items: center;
 }
+.header__link {
+  animation-name: logo;
+  animation-duration: 1500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 @media screen and (min-width: 1320px) {
   .header__link {
     width: 130px;
     height: 15.236px;
   }
+}
+.header__link:hover .header__logo {
+  fill: rgba(255, 255, 255, 0.8);
 }
 .header__logo {
   fill: #E7E7E7;
@@ -149,6 +189,18 @@ html {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes logo {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
 }
 @media screen and (min-width: 1320px) {
   .hero {
@@ -999,7 +1051,7 @@ html {
 @media screen and (min-width: 708px) {
   .footer {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 26px;
   }
 }
 @media screen and (min-width: 1320px) {
@@ -1019,10 +1071,8 @@ html {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  -moz-column-gap: 45px;
-       column-gap: 45px;
-  height: 102px;
-  margin-bottom: 52px;
+  height: 126px;
+  margin-bottom: 28px;
 }
 @media screen and (min-width: 708px) {
   .footer__list {

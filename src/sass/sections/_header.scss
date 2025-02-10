@@ -19,18 +19,26 @@
     }
 
     &__link {
+        // transform: scale(1.2);
+        // transition-property: transform;
+        // transition-duration: 200ms;
+        // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        animation-name: logo;
+        animation-duration: 1500ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
         @media screen and (min-width: 1320px) {
             width: 130px;
             height: 15.236px;
         }
 
-        // &:hover {
+        &:hover {
 
-        //     .header__logo {
-        //         fill: $text-color;
-        //     }
-        // }
+            .header__logo {
+                fill: $text-color;
+            }
+        }
     }
 
     &__logo {
@@ -97,10 +105,21 @@
             transition-property: color;
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            
-            @media screen and (min-width: 1320px) {
-            
-            }
         }
+    }
+}
+
+@keyframes logo{
+
+    0% {
+        transform: scale(0.9);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(0.9);
     }
 }

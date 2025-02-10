@@ -1,3 +1,4 @@
+// Мобільне меню
 (() => {   
     const refs = {   
       openModalBtn: document.querySelector("[data-modal-header-open]"),   

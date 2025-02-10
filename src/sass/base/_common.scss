@@ -1,10 +1,29 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url(../fonts/Gilroy-Regular.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy Semibold";
+    src: url(../fonts/Gilroy-Semibold.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
 body { 
     background-color: $bcg-color;
     font-family: "Gilroy";
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Gilroy Semibold";
+}
+
 html {
     scroll-behavior: smooth;
+    
 }
 
 ::-webkit-scrollbar {
@@ -15,4 +34,22 @@ html {
 
 ::-webkit-scrollbar-thumb {
     background: $button-color;
+}
+
+.scroll {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    // width: 40px;
+    // height: 40px;
+    padding: 10px;
+    background-color: $button-color;
+    border: none;
+    border-radius: 50%;
+
+    &__icon {
+        fill: white;
+        width: 20px;
+        height: 20px;
+    }
 }
