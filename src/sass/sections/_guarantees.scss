@@ -1,8 +1,13 @@
 .guarantees {
-    padding: 52px 0;
+    padding: 36px 0;
 
     @media screen and (min-width: 708px) {
         display: flex;
+        padding: 50px 0;
+    }
+
+    @media screen and (min-width: 1320px) {
+        padding: 85px 0;
         
     }
 

@@ -7,15 +7,16 @@
             <img src="../img/phone/feedback-phone@1x.webp" alt="background" class="feedback__background">
         </picture>
         <h2 class="feedback__title">Feedback</h2>
-        <p class="feedback_desc">We'll help you find the right headphones for you.</p>
+        <p class="feedback__desc">We'll help you find the right headphones for you.</p>
         <form action="#" class="feedback__form">
             <!-- огорнути лейблами -->
             <input type="text" placeholder="Name" class="feedback__input">
             <input type="email" placeholder="Email" class="feedback__input">
             <textarea name="message" placeholder="Message" class="feedback__textarea"></textarea>
-            <label for="checkbox">
+            <label for="checkbox" class="feedback__checkbox-label">
             <input type="checkbox" id="checkbox" class="feedback__checkbox">
-            <span class="feedback__checkbox-desc">I agree to the <a href="#">privacy policy</a></span>
+            <span class="feedback__checkbox-custom"></span>
+            <span class="feedback__checkbox-desc">I agree to the <a href="#" class="feedback__checkbox-link">privacy policy</a></span>
             </label>
             <button type="submit" class="feedback__button">Send</button>
         </form>

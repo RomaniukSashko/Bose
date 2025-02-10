@@ -1,8 +1,14 @@
 .hero {
 
-@media screen and (min-width: 1320px) {
-    padding-bottom: 98px;
-}
+    padding-bottom: 26px;
+
+    @media screen and (min-width: 708px) {
+        padding-bottom: 50px;
+    }
+
+    @media screen and (min-width: 1320px) {
+    padding-bottom: 85px;
+    }
 
     &__box {
 
