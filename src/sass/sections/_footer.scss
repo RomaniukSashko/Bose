@@ -4,7 +4,7 @@
 
     @media screen and (min-width: 708px) {
         padding-top: 50px;
-        padding-bottom: 50px;
+        padding-bottom: 26px;
     }
 
     @media screen and (min-width: 1320px) {
@@ -13,32 +13,23 @@
     }
 
     & > .container{
-        // flex-direction: column;
 
         @media screen and (min-width: 708px) {
             display: flex;
             flex-direction: row;
-            // justify-content: space-between;
             align-items: last baseline;
         }
-
-        // @media screen and (min-width: 1320px) {
-        //     gap: 267px;
-        // }
     }
 
     &__list {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        column-gap: 45px;
-        // row-gap: 24px;
-        height: 102px;
-        margin-bottom: 52px;
+        height: 126px;
+        margin-bottom: 28px;
 
         @media screen and (min-width: 708px) {
             column-gap: 139px;
-            // row-gap: 0;
             margin-bottom: 0;
         }
 
@@ -97,7 +88,6 @@
         font-size: 16px;
         font-weight: 400;
         line-height: 1.1875;
-        // margin-top: 52px;
 
         &:hover, &:focus {
             color: transparent;
