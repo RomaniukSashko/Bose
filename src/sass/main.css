@@ -202,9 +202,17 @@ html {
     transform: scale(0.9);
   }
 }
+.hero {
+  padding-bottom: 26px;
+}
+@media screen and (min-width: 708px) {
+  .hero {
+    padding-bottom: 50px;
+  }
+}
 @media screen and (min-width: 1320px) {
   .hero {
-    padding-bottom: 98px;
+    padding-bottom: 85px;
   }
 }
 @media screen and (min-width: 708px) {
@@ -765,11 +773,17 @@ html {
 }
 
 .guarantees {
-  padding: 52px 0;
+  padding: 36px 0;
 }
 @media screen and (min-width: 708px) {
   .guarantees {
     display: flex;
+    padding: 50px 0;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .guarantees {
+    padding: 85px 0;
   }
 }
 .guarantees__title {
@@ -852,8 +866,20 @@ html {
 }
 
 .history {
-  padding-bottom: 52px;
-  background-image: url("../img/phone/history-phone-background@2x.png");
+  padding: 36px 0;
+}
+@media screen and (min-width: 708px) {
+  .history {
+    padding: 50px 0;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .history {
+    padding: 85px 0;
+  }
+}
+.history__box {
+  background-image: url("../img/phone/history-phone-background@2x.webp");
   background-repeat: no-repeat;
   background-size: 120px;
   background-position: top right calc((100% - 220px) / 2);
@@ -906,7 +932,17 @@ html {
 }
 
 .reviews {
-  padding-bottom: 100px;
+  padding: 36px 0 16px 0;
+}
+@media screen and (min-width: 708px) {
+  .reviews {
+    padding: 50px 0;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .reviews {
+    padding: 85px 0;
+  }
 }
 @media screen and (min-width: 1320px) {
   .reviews__box {
@@ -1042,6 +1078,129 @@ html {
 }
 .reviews__button:last-child:after {
   display: none;
+}
+
+.feedback {
+  padding: 44px 0 26px 0;
+}
+.feedback__background {
+  width: 280px;
+  height: 235px;
+  margin-bottom: 16px;
+}
+.feedback__title {
+  color: #E7E7E7;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+.feedback__desc {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  margin-bottom: 40px;
+}
+.feedback__input {
+  color: rgba(255, 255, 255, 0.8);
+  width: 280px;
+  height: 51px;
+  background-color: #191919;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  outline: none;
+  margin-bottom: 32px;
+}
+.feedback__input:focus {
+  border-bottom: 1px solid #DF3D3A;
+}
+.feedback__textarea {
+  color: rgba(255, 255, 255, 0.8);
+  width: 280px;
+  height: 80px;
+  background-color: #191919;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  outline: none;
+  margin-bottom: 40px;
+  resize: none;
+}
+.feedback__textarea:focus {
+  border-bottom: 1px solid #DF3D3A;
+}
+.feedback__checkbox-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+.feedback__checkbox-label input {
+  display: none;
+}
+.feedback__checkbox-label input:checked + .feedback__checkbox-custom {
+  background-color: #191919; /* Background color when checked */
+  border-color: #E7E7E7; /* Border color when checked */
+}
+.feedback__checkbox {
+  display: none;
+}
+.feedback__checkbox-custom {
+  width: 30px;
+  height: 28px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  background-color: #191919;
+  position: relative;
+  margin-right: 24px;
+}
+.feedback__checkbox-custom::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.feedback__checkbox-label input:checked + .feedback__checkbox-custom:after {
+  display: block;
+}
+.feedback__checkbox-custom:after {
+  left: 10px;
+  top: -10px;
+  width: 16px;
+  height: 25.5px;
+  border: solid #DF3D3A;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+.feedback__checkbox-desc {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+.feedback__checkbox-link {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 125%;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+.feedback__button {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+  padding: 20px 119px;
+  background-color: #191919;
+  border: 1px solid #DF3D3A;
 }
 
 .footer {
