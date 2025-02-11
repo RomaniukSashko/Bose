@@ -34,6 +34,14 @@
         fill: $title-color;
         width: 100px;
         height: 12px;
+        animation-name: logo;
+        animation-duration: 1500ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover {
+            fill: $text-color;
+        }
     }
 
     &__close {
@@ -85,5 +93,20 @@
             font-size: 16px;
             line-height: 1.1875;
         }
+    }
+}
+
+@keyframes logo{
+
+    0% {
+        transform: scale(0.9);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(0.9);
     }
 }

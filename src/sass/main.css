@@ -82,15 +82,43 @@ html {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  padding: 10px;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
   background-color: #DF3D3A;
   border: none;
   border-radius: 50%;
 }
+@media screen and (min-width: 708px) {
+  .scroll {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .scroll {
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+  }
+}
 .scroll__icon {
-  fill: white;
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
+  transform: rotate(-45deg);
+}
+@media screen and (min-width: 708px) {
+  .scroll__icon {
+    width: 15px;
+    height: 15px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .scroll__icon {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .header {
@@ -422,7 +450,7 @@ html {
 }
 @media screen and (min-width: 708px) {
   .design__item:nth-child(2) {
-    margin-bottom: 59px;
+    margin-bottom: 58px;
   }
 }
 @media screen and (min-width: 1320px) {
@@ -478,6 +506,9 @@ html {
   .capable {
     padding-top: 85px;
     padding-bottom: 85px;
+  }
+  .capable__position {
+    margin-left: 110px;
   }
 }
 .capable__title {
@@ -1352,6 +1383,13 @@ html {
   fill: #E7E7E7;
   width: 100px;
   height: 12px;
+  animation-name: logo;
+  animation-duration: 1500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu__logo:hover {
+  fill: rgba(255, 255, 255, 0.8);
 }
 .menu__close {
   background-color: transparent;
@@ -1395,5 +1433,17 @@ html {
   .menu__link {
     font-size: 16px;
     line-height: 1.1875;
+  }
+}
+
+@keyframes logo {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(0.9);
   }
 }/*# sourceMappingURL=main.css.map */
