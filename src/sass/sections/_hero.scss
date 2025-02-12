@@ -36,6 +36,7 @@
         @media screen and (min-width: 1320px) {
             max-width: 321px;
             margin-bottom: 36px;
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
     }
@@ -52,6 +53,12 @@
         @media screen and (min-width: 1320px) {
             margin-bottom: 94px;
         }
+    }
+
+    &__text:hover {
+        @media screen and (min-width: 1320px) {
+            transform: scale(1.1);
+        }  
     }
 
     &__btn-title-box {
@@ -82,8 +89,12 @@
             letter-spacing: 1.48px;
             text-transform: uppercase;
             max-width: 674px;
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
+    }
 
+    &__title:hover {
+        transform: scale(1.1);
     }
 
     &__btn {
@@ -97,6 +108,7 @@
         text-transform: uppercase;
         background-color: $button-color;
         margin-bottom: 32px;
+        border: 1px solid $button-color;
 
         @media screen and (min-width: 708px) {
             margin-bottom: 0;
@@ -105,8 +117,14 @@
 
         @media screen and (min-width: 1320px) {
             padding: 22px 167px;
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), border 0.1s cubic-bezier(0.4, 0, 0.2, 1);
         }
+    }
 
+    &__btn:hover {
+        transform: scale(1.1);
+        background-color: $bcg-color;
+        border: 1px solid $button-color;
     }
 
     &__img {
