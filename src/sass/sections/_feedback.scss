@@ -1,12 +1,12 @@
 .feedback {
     padding: 44px 0 26px 0;
-
+  
     &__background {
         width: 280px;
         height: 235px;
         margin-bottom: 16px;
     }
-
+  
     &__title {
         color: $title-color;
         font-size: 24px;
@@ -16,7 +16,7 @@
         text-transform: uppercase;
         margin-bottom: 32px;
     }
-
+  
     &__desc {
         color: $text-color;
         font-size: 16px;
@@ -24,7 +24,7 @@
         line-height: 1.25;
         margin-bottom: 40px;
     }
-
+  
     &__input {
         color: $text-color;
         width: 280px;
@@ -34,12 +34,13 @@
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         outline: none;
         margin-bottom: 32px;
+        transition: border-bottom 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-
+  
     &__input:focus {
         border-bottom: 1px solid $button-color;
     }
-
+  
     &__textarea {
         color: $text-color;
         width: 280px;
@@ -50,28 +51,29 @@
         outline: none;
         margin-bottom: 40px;
         resize: none;
+        transition: border-bottom 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-
+  
     &__textarea:focus {
         border-bottom: 1px solid $button-color;
     }
-
+  
     &__checkbox-label {
-        display: flex;
+        display: inline-flex;
         align-items: center;
         cursor: pointer;
         margin-bottom: 40px;
     }
-
+  
     &__checkbox-label input {
         display: none;
     }
-
-    &__checkbox-label input:checked + &__checkbox-custom {
+  
+    &__checkbox:checked + &__checkbox-custom {
         background-color: $bcg-color; /* Background color when checked */
         border-color: $title-color; /* Border color when checked */
     }
-
+  
     &__checkbox {
         display: none;
     }
@@ -84,18 +86,15 @@
         position: relative;
         margin-right: 24px;
     }
-
-    &__checkbox-custom::after {
+  
+    &__checkbox:checked + &__checkbox-custom:after {
+        display: inline-block;  
+    }
+  
+    &__checkbox-custom:after {
         content: "";
         position: absolute;
         display: none;
-    }
-
-    &__checkbox-label input:checked + &__checkbox-custom:after {
-        display: block;
-    }
-
-    &__checkbox-custom:after {
         left: 10px;
         top: -10px;
         width: 16px;
@@ -104,14 +103,14 @@
         border-width: 0 3px 3px 0;
         transform: rotate(45deg);
     }
-
+  
     &__checkbox-desc {
         color: $text-color;
         font-size: 14px;
         font-weight: 400;
         line-height: 1.25;
     }
-
+  
     &__checkbox-link {
         color: $text-color;
         font-size: 14px;
@@ -124,7 +123,7 @@
         text-underline-offset: auto;
         text-underline-position: from-font;
     }
-
+  
     &__button {
         color: $text-color;
         font-size: 16px;
@@ -135,6 +134,11 @@
         padding: 20px 119px;
         background-color: $bcg-color;
         border: 1px solid $button-color;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-
-}
+  
+    &__button:hover {
+        background-color: $button-color;
+    }
+  
+  }
