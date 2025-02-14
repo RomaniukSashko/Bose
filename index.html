@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
     <script type="module" crossorigin src="/Bose/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Bose/assets/index-758cd147.css">
+    <link rel="stylesheet" href="/Bose/assets/index-c30f88fe.css">
   </head>
   <body>
     <header class="header" id="header">
@@ -37,7 +37,7 @@
         </button>
     </div>
 </header>
-    <section class="hero">
+    <section class="hero" id="hero">
     <div class="container hero__box">
         <div class="hero__text-box">
         <p class="hero__text">Noise cancellation headphones <br>that are capable for a lot of things</p>
@@ -144,7 +144,7 @@
     </picture>
   </div> 
 </section>
-    <section class="guarantees">
+    <section class="guarantees" id="guarantees">
     <div class="container guarantees__box">
         <div class="guarantees__text-box">
         <h2 class="guarantees__title">Guarantees</h2>
@@ -167,7 +167,7 @@
         </picture>
     </div>
 </section>
-    <section class="history">
+    <section class="history" id="history">
     <div class="container history__box">
         <div class="history__text-box">
         <h2 class="history__title">brand creation history</h2>
@@ -205,7 +205,7 @@
         </div>
     </div>
 </section>
-    <section class="reviews">
+    <section class="reviews" id="reviews">
     <div class="container reviews__box">
         <h2 class="reviews__title">reviews</h2>
         <iframe src="https://www.youtube.com/embed/VqP11Ma_2Fk?si=sZX4aB27XTYGNQyw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="reviews__video"></iframe>
@@ -299,7 +299,7 @@
     <button type="button" class="model__btn">order</button>
 </div>
 </section>
-    <section class="feedback">
+    <section class="feedback" id="feedback">
     <div class="container">
         <picture>
             <source srcset="/Bose/assets/feedback-desktop@1x-3a9b7bea.webp 1x, /Bose/assets/feedback-desktop@2x-dea9508d.webp 2x" media="(min-width: 1320px)">
@@ -307,8 +307,11 @@
             <source srcset="/Bose/assets/feedback-phone@1x-37c21772.webp 1x, /Bose/assets/feedback-phone@1x-37c21772.webp 2x" media="(max-width: 707px)">
             <img src="../img/phone/feedback-phone@1x.webp" alt="background" class="feedback__background">
         </picture>
+        <div class="feedback__info-box">
+        <div class="feedback__text-box">
         <h2 class="feedback__title">Feedback</h2>
         <p class="feedback__desc">We'll help you find the right headphones for you.</p>
+        </div>
         <form action="#" class="feedback__form">
             <input type="text" placeholder="Name" class="feedback__input">
             <input type="email" placeholder="Email" class="feedback__input">
@@ -320,6 +323,7 @@
             </label>
             <button type="submit" class="feedback__button">Send</button>
         </form>
+        </div>
     </div>
 </section>
     <footer class="footer">
