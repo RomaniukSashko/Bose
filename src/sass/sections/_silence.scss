@@ -49,14 +49,14 @@ margin-bottom: 32px;
 @media screen and (min-width: 708px) {
 font-size: 30px;
 letter-spacing: 0.6px;
-padding-left: 361px;
+margin-left: 361px;
 
 }
 
 @media screen and (min-width: 1320px) {
     font-size: 54px;
     letter-spacing: 1.08px;
-    padding-left: 533px;
+    margin-left: 533px;
     margin-bottom: 50px;
     }
     }
@@ -76,6 +76,13 @@ padding-left: 361px;
     }
 
     &__item{
+        @media screen and (min-width: 708px) {
+            margin-top: 325px;
+            } 
+            
+            @media screen and (min-width: 1320px) {
+                margin-top: 574px;
+                } 
 
         &:nth-child(2){
             @media screen and (min-width: 708px) {
@@ -102,14 +109,12 @@ padding-left: 361px;
 
         @media screen and (min-width: 708px) {
             // margin-top: 32px;
-            margin-top: 325px;
             } 
             
             @media screen and (min-width: 1320px) {
                 font-size: 28px;
                 // margin-top: 50px;
                 margin-bottom: 20px;
-                margin-top: 574px;
                 } 
 
     }

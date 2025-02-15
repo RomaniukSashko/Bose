@@ -638,14 +638,14 @@ html {
   .silence__title {
     font-size: 30px;
     letter-spacing: 0.6px;
-    padding-left: 361px;
+    margin-left: 361px;
   }
 }
 @media screen and (min-width: 1320px) {
   .silence__title {
     font-size: 54px;
     letter-spacing: 1.08px;
-    padding-left: 533px;
+    margin-left: 533px;
     margin-bottom: 50px;
   }
 }
@@ -660,6 +660,16 @@ html {
 @media screen and (min-width: 1320px) {
   .silence__list {
     display: flex;
+  }
+}
+@media screen and (min-width: 708px) {
+  .silence__item {
+    margin-top: 325px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .silence__item {
+    margin-top: 574px;
   }
 }
 @media screen and (min-width: 708px) {
@@ -681,16 +691,10 @@ html {
   margin-top: 32px;
   margin-bottom: 16px;
 }
-@media screen and (min-width: 708px) {
-  .silence__subtitle {
-    margin-top: 325px;
-  }
-}
 @media screen and (min-width: 1320px) {
   .silence__subtitle {
     font-size: 28px;
     margin-bottom: 20px;
-    margin-top: 574px;
   }
 }
 .silence__text {
@@ -733,6 +737,7 @@ html {
 @media screen and (min-width: 1320px) {
   .ar__box {
     position: relative;
+    padding-bottom: 192px;
   }
 }
 .ar__title {
@@ -795,7 +800,6 @@ html {
     width: 380px;
     font-size: 20px;
     line-height: 1.45;
-    padding-bottom: 242px;
   }
 }
 .ar__img {
@@ -1371,17 +1375,36 @@ html {
     margin-bottom: 54px;
   }
 }
+.faq__item {
+  display: flex;
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+@media screen and (min-width: 708px) {
+  .faq__item {
+    margin-bottom: 28px;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .faq__item {
+    margin-bottom: 21px;
+    margin-top: 88px;
+  }
+}
 .faq__subtitle {
   color: #E7E7E7;
   font-family: "Roboto Condensed";
   font-size: 20px;
   font-weight: 400;
   line-height: 0.7;
+  margin-right: 16px;
 }
 @media screen and (min-width: 1320px) {
   .faq__subtitle {
     font-size: 28px;
     line-height: 1.25;
+    margin-right: 32px;
   }
 }
 .faq__subtitle2 {
@@ -1390,6 +1413,7 @@ html {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.25;
+  margin-right: auto;
 }
 @media screen and (max-width: 707px) {
   .faq__subtitle2 {
@@ -1439,9 +1463,23 @@ html {
   content: "";
   display: block;
   width: 100%;
-  height: 1px;
+  height: 2px;
   background-color: rgba(255, 255, 255, 0.8);
   opacity: 0.1;
+}
+
+.model {
+  padding-top: 52px;
+}
+@media screen and (min-width: 708px) {
+  .model {
+    padding-top: 100px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .model {
+    padding-top: 170px;
+  }
 }
 
 .feedback {

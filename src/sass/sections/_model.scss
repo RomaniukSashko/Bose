@@ -1,0 +1,9 @@
+.model{
+    padding-top: 52px;
+    @media screen and (min-width: 708px) {
+        padding-top: 100px;
+    }
+    @media screen and (min-width: 1320px) {
+        padding-top: 170px;
+    }
+}
