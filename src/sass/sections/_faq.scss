@@ -1,0 +1,107 @@
+.faq{
+    padding-top: 16px;
+    @media screen and (min-width: 708px) {
+        padding-top: 50px;
+    }
+    @media screen and (min-width: 1320px) {
+        padding-top: 85px;
+    }
+
+    &__title{
+        color: $title-color;
+
+        font-family: "Gilroy";
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 1.2;
+        letter-spacing: 0.48px;
+        text-transform: uppercase;
+        margin-bottom: 32px;
+
+        @media screen and (min-width: 708px) {
+            font-size: 30px;
+            letter-spacing: 0.6px;
+        }
+
+        @media screen and (min-width: 1320px) {
+            font-size: 54px;
+            letter-spacing: 1.08px;
+            margin-bottom: 54px;
+        }
+    }
+
+    &__subtitle{
+        color: $title-color;
+
+        font-family: "Roboto Condensed";
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 0.7;
+        @media screen and (min-width: 708px) {
+            
+        }
+        @media screen and (min-width: 1320px) {
+            font-size: 28px;
+            line-height: 1.25;
+        }
+    }
+
+    &__subtitle2{
+        color: $text-color;
+        font-family: "Gilroy";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.25;
+        @media screen and (max-width: 707px) {
+            width: 200px;
+        }
+        @media screen and (min-width: 708px) {
+            font-size: 16px;
+            line-height: 1.45;
+        }
+        @media screen and (min-width: 1320px) {
+            font-size: 28px;
+        }
+    }
+
+    &__btn{
+        background-color: $faq-color;
+        border: 1px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+        @media screen and (min-width: 708px) {
+            
+        }
+        @media screen and (min-width: 1320px) {
+            width: 42px;
+            height: 42px;  
+        }
+    }
+
+    &__button{
+        color: $title-color;
+
+        font-family: "Roboto Condensed";
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 0.7; 
+        @media screen and (min-width: 708px) {
+            
+        }
+        @media screen and (min-width: 1320px) {
+            font-size: 28px
+        }
+    }
+    &__div::before{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: $text-color;
+        opacity: 0.1;
+    }
+}
