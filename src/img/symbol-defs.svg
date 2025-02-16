@@ -1,8 +1,8 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
         <!-- Непрацює -->
-        <symbol id="arrow" viewBox="0 0 31 32">
-            <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.7826" d="M1.391 29.783l27.826-27.826M29.217 1.957h-27.826M29.217 1.957v27.826"></path>
+        <symbol id="arrow" viewBox="0 0 32 32">
+            <path d="M1.042 0v2.948h25.925l-26.967 26.967 2.085 2.085 26.967-26.967v25.925h2.948v-29.484h-1.474v-1.474z"></path>
         </symbol>
         <!-- Працює -->
         <symbol id="quotes" viewBox="0 0 44 32">

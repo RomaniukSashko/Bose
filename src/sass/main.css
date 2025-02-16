@@ -78,49 +78,6 @@ html {
   background: #DF3D3A;
 }
 
-.scroll {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 30px;
-  height: 30px;
-  padding: 5px;
-  background-color: #DF3D3A;
-  border: none;
-  border-radius: 50%;
-}
-@media screen and (min-width: 708px) {
-  .scroll {
-    width: 40px;
-    height: 40px;
-    padding: 10px;
-  }
-}
-@media screen and (min-width: 1320px) {
-  .scroll {
-    width: 50px;
-    height: 50px;
-    padding: 15px;
-  }
-}
-.scroll__icon {
-  width: 10px;
-  height: 10px;
-  transform: rotate(-45deg);
-}
-@media screen and (min-width: 708px) {
-  .scroll__icon {
-    width: 15px;
-    height: 15px;
-  }
-}
-@media screen and (min-width: 1320px) {
-  .scroll__icon {
-    width: 20px;
-    height: 20px;
-  }
-}
-
 .header {
   padding-top: 30px;
   padding-bottom: 32px;
@@ -1812,6 +1769,49 @@ html {
 @media screen and (min-width: 1320px) {
   .footer__tel {
     margin-top: auto;
+  }
+}
+
+.scroll {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  background-color: #DF3D3A;
+  border: none;
+  border-radius: 50%;
+}
+@media screen and (min-width: 708px) {
+  .scroll {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .scroll {
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+  }
+}
+.scroll__icon {
+  width: 10px;
+  height: 10px;
+  transform: rotate(-45deg);
+}
+@media screen and (min-width: 708px) {
+  .scroll__icon {
+    width: 15px;
+    height: 15px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .scroll__icon {
+    width: 20px;
+    height: 20px;
   }
 }
 
