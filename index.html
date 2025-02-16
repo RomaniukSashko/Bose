@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
     <script type="module" crossorigin src="/Bose/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Bose/assets/index-cb1a8fc5.css">
+    <link rel="stylesheet" href="/Bose/assets/index-0d3f2f39.css">
   </head>
   <body>
     <header class="header" id="header">
@@ -185,7 +185,6 @@
             so flat and unnatural that it was better not 
             to listen to the music at all than to listen 
             to it in such a distorted form.</p>
-            <!-- tut na sled -->
         </div>
         <div class="history__quote-box">
         <p class="history__desc-s">Bose's frustration grew into a firm determination to build audio equipments that would reproduce sound with impeccable accuracy and naturalness</p>
@@ -196,8 +195,9 @@
             <img src="../img/phone/history-phone-second@1x.webp" alt="history" class="history__img-s">
         </picture>
         <div class="history__quote-fix">
-        <svg class="history__svg">
-            <use href="../img/symbol-defs.svg#quotes"></use>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 25" fill="none" class="history__svg">
+            <path d="M0 12.0397V0H13.9651V9.06516C13.9651 18.508 9.31007 23.8196 0 25V20.0425C2.35151 19.4287 3.95918 18.5316 4.823 17.3513C5.73481 16.1709 6.28669 14.4004 6.47865 12.0397H0Z" fill="#DF3D3A"/>
+            <path d="M20.0349 12.0397V0H34V9.06516C34 18.508 29.345 23.8196 20.0349 25V20.0425C22.3864 19.4287 23.9941 18.5316 24.8579 17.3513C25.7697 16.1709 26.3216 14.4004 26.5136 12.0397H20.0349Z" fill="#DF3D3A"/>
         </svg>
         <h3 class="history__quote">Never stop dreaming. Always dream of the best, and think about how to achieve it.</h3>
         <p class="history__quote-desc">Amar Bose is a company founder</p>
@@ -305,11 +305,11 @@
         <p class="feedback__desc">We'll help you find the right headphones for you.</p>
         </div>
         <form action="#" class="feedback__form">
-            <input type="text" placeholder="Name" class="feedback__input">
-            <input type="email" placeholder="Email" class="feedback__input">
-            <textarea name="message" placeholder="Message" class="feedback__textarea"></textarea>
+            <input type="text" placeholder="Name" class="feedback__input" required>
+            <input type="email" placeholder="Email" class="feedback__input" required>
+            <textarea name="message" placeholder="Message" class="feedback__textarea" required></textarea>
             <label for="checkbox" class="feedback__checkbox-label">
-            <input type="checkbox" id="checkbox" class="feedback__checkbox">
+            <input type="checkbox" id="checkbox" class="feedback__checkbox" required>
             <span class="feedback__checkbox-custom"></span>
             <span class="feedback__checkbox-desc">I agree to the <a href="#" class="feedback__checkbox-link">privacy policy</a></span>
             </label>
