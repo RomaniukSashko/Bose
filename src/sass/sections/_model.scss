@@ -6,4 +6,156 @@
     @media screen and (min-width: 1320px) {
         padding-top: 170px;
     }
+
+    &__title{
+        color: $title-color;
+
+        font-family: "Gilroy";
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.2;
+        letter-spacing: 0.48px;
+        text-transform: uppercase;
+        @media screen and (min-width: 708px) {
+            font-size: 30px;
+            letter-spacing: 0.6px;
+        }
+        @media screen and (min-width: 1320px) {
+            font-size: 54px;
+            letter-spacing: 1.08px;
+        }
+    }
+
+    &__button{
+        background-color: $model-black;
+        width: 44px;
+        height: 44px;
+        border: 1px outset white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        @media screen and (min-width: 708px) {
+            width: 58px;
+            height: 58px;
+        }
+        @media screen and (min-width: 1320px) {
+            width: 70px;
+            height: 70px;
+        }
+    }
+
+    &__button2{
+        background-color: white;
+        width: 44px;
+        height: 44px;
+        border: 1px outset white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        @media screen and (min-width: 708px) {
+            width: 58px;
+            height: 58px;
+        }
+        @media screen and (min-width: 1320px) {
+            width: 70px;
+            height: 70px;
+        }
+    }
+
+    &__img{
+        width: 100%;
+        @media screen and (min-width: 708px) {
+            width: 648px;
+            height: 446px;
+        }
+        @media screen and (min-width: 1320px) {
+            width: 700px;
+            height: 664px;
+        }
+    }
+
+    &__div::before{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: $text-color;
+        @media screen and (min-width: 708px) {
+            width: 648px;
+        }
+        @media screen and (min-width: 1320px) {
+            width: 400px;
+        }
+    }
+
+    &__subtitle{
+        width: 271px;
+        color: $text-color;
+
+        font-family: "Gilroy";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.25;
+        @media screen and (min-width: 708px) {
+
+        }
+        @media screen and (min-width: 1320px) {
+            
+        }
+    }
+
+    &__title2{
+        color: $button-color;
+
+        font-family: "Gilroy";
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.2;
+        letter-spacing: 0.48px;
+        text-transform: uppercase;
+        @media screen and (min-width: 708px) {
+            font-size: 30px;
+            letter-spacing: 0.6px;
+        }
+        @media screen and (min-width: 1320px) {
+            font-size: 54px;
+            letter-spacing: 1.08px;
+        }
+    }
+
+    &__button3{
+        width: 280px;
+        height: 58px;
+        background-color: $button-color;
+        border: 1px;
+        @media screen and (min-width: 708px) {
+            width: 294px;
+            height: 58px;
+        }
+        @media screen and (min-width: 1320px) {
+            width: 400px;
+            height: 68px;
+        }
+    }
+
+    &__btn3{
+        color: $button-text;
+
+        font-family: "Gilroy";
+        font-size: 16px;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 0.32px;
+        text-transform: uppercase;
+        @media screen and (min-width: 708px) {
+            font-size: 20px;
+            letter-spacing: 0.4px;
+        }
+        @media screen and (min-width: 1320px) {
+            font-size: 20px;
+            letter-spacing: 0.4px;
+        }
+    }
 }
