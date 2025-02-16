@@ -38,7 +38,6 @@
             margin-bottom: 36px;
             transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
-  
     }
   
     &__text:nth-child(2) {
@@ -76,6 +75,7 @@
         letter-spacing: 0.68px;
         text-transform: uppercase;
         margin-bottom: 32px;
+        animation: hero-text 2s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate;
   
         @media screen and (min-width: 708px) {
             font-size: 38px;
@@ -89,12 +89,19 @@
             letter-spacing: 1.48px;
             text-transform: uppercase;
             max-width: 674px;
-            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
-    }
-  
-    &__title:hover {
-        transform: scale(1.1);
+
+        @keyframes hero-text {
+            0% {
+                transform: scale(1) translate(0, 0);
+                opacity: 0.8;
+            }
+            100% {
+                transform: scale(1.05) translate(0, -20px);
+                opacity: 1;
+            }
+        } 
+
     }
   
     &__btn {
@@ -130,6 +137,7 @@
     &__img {
         max-width: 280px;
         height: 240px;
+        animation: hero-img 2s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate; 
   
         @media screen and (min-width: 708px) {
             max-width: 354px;
@@ -140,9 +148,19 @@
         }
   
         @media screen and (min-width: 1320px) {
-            max-width: 700px;
-            height: 598px;
+            max-width: 650px;
+            height: 540px;
             right: -90px;
         }
+
+        @keyframes hero-img {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.05);
+            }
+        } 
+
     }
   }
