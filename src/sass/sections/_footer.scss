@@ -137,6 +137,7 @@
         width: 10px;
         height: 10px;
         transform: rotate(-45deg);
+        fill: $text-color;
     
         @media screen and (min-width: 708px) {
             width: 15px;
