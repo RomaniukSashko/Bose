@@ -78,6 +78,10 @@ html {
   background: #DF3D3A;
 }
 
+button, a {
+  cursor: pointer;
+}
+
 .header {
   padding-top: 30px;
   padding-bottom: 32px;
@@ -1995,6 +1999,7 @@ html {
   width: 10px;
   height: 10px;
   transform: rotate(-45deg);
+  fill: rgba(255, 255, 255, 0.8);
 }
 @media screen and (min-width: 708px) {
   .scroll__icon {
