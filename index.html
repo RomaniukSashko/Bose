@@ -10,12 +10,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <script type="module" crossorigin src="/Bose/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Bose/assets/index-76abb811.css">
+    <link rel="stylesheet" href="/Bose/assets/index-56880f19.css">
   </head>
   <body>
-    <header class="header" id="header">
+    <header class="header" id="header" data-aos="fade-down">
     <div class="container">
         <a href="./index.html" class="header__link" aria-label="Logotype and link to main page">
             <svg class="header__logo">
@@ -55,7 +56,7 @@
         </picture>
     </div>
 </section>
-    <section class="design">
+    <section class="design" data-aos="fade-right">
     <div class="container">
         <div class="design__flex">
             <picture>
@@ -80,7 +81,7 @@
         </div>
     </div>
 </section>
-    <section class="capable" id="characteristics">
+    <section class="capable" id="characteristics" data-aos="zoom-in">
     <div class="container">
         <div class="capable__position">
             <h2 class="capable__title">Capable of so much</h2>
@@ -318,7 +319,7 @@
         </div>
     </div>
 </section>
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-up">
     <div class="container">
         <ul class="footer__list">
             <li class="footer__item"><a href="#characteristics" class="footer__link" aria-label="Link to characteristics of Bose NC 700">Characteristics</a></li>
@@ -360,5 +361,9 @@
 </div>
 
     
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
