@@ -362,7 +362,7 @@ button, a {
 @media screen and (min-width: 708px) {
   .design {
     padding-top: 50px;
-    padding-top: 64px;
+    padding-bottom: 64px;
     position: relative;
   }
 }
