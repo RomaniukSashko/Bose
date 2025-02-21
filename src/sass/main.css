@@ -1456,6 +1456,17 @@ button, a {
 @media screen and (min-width: 1320px) {
   .model {
     padding-top: 170px;
+    padding-bottom: 85px;
+  }
+}
+@media screen and (min-width: 708px) {
+  .model__box {
+    position: relative;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .model__box {
+    position: relative;
   }
 }
 .model__title {
@@ -1477,7 +1488,11 @@ button, a {
   .model__title {
     font-size: 54px;
     letter-spacing: 1.08px;
+    margin-bottom: 50px;
   }
+}
+.model__divv {
+  display: flex;
 }
 .model__button {
   background-color: #000000;
@@ -1493,12 +1508,15 @@ button, a {
   .model__button {
     width: 58px;
     height: 58px;
+    margin-top: 510px;
+    margin-right: 24px;
   }
 }
 @media screen and (min-width: 1320px) {
   .model__button {
     width: 70px;
     height: 70px;
+    margin-right: 20px;
   }
 }
 .model__button2 {
@@ -1515,6 +1533,7 @@ button, a {
   .model__button2 {
     width: 58px;
     height: 58px;
+    margin-top: 510px;
   }
 }
 @media screen and (min-width: 1320px) {
@@ -1530,12 +1549,17 @@ button, a {
   .model__img {
     width: 648px;
     height: 446px;
+    position: absolute;
+    top: 64px;
   }
 }
 @media screen and (min-width: 1320px) {
   .model__img {
     width: 700px;
     height: 664px;
+    position: absolute;
+    right: -49px;
+    top: 0;
   }
 }
 .model__div::before {
@@ -1555,6 +1579,16 @@ button, a {
     width: 400px;
   }
 }
+@media screen and (min-width: 708px) {
+  .model__div2 {
+    margin-top: 40px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .model__div2 {
+    margin-top: 50px;
+  }
+}
 .model__subtitle {
   width: 271px;
   color: rgba(255, 255, 255, 0.8);
@@ -1562,6 +1596,18 @@ button, a {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.25;
+}
+@media screen and (min-width: 708px) {
+  .model__subtitle {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .model__subtitle {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
 }
 .model__title2 {
   color: #DF3D3A;
@@ -1576,12 +1622,16 @@ button, a {
   .model__title2 {
     font-size: 30px;
     letter-spacing: 0.6px;
+    margin-top: 52px;
+    margin-bottom: 32px;
   }
 }
 @media screen and (min-width: 1320px) {
   .model__title2 {
     font-size: 54px;
     letter-spacing: 1.08px;
+    margin-top: 50px;
+    margin-bottom: 32px;
   }
 }
 .model__button3 {

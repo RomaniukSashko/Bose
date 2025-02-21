@@ -5,6 +5,16 @@
     }
     @media screen and (min-width: 1320px) {
         padding-top: 170px;
+        padding-bottom: 85px;
+    }
+
+    &__box{
+        @media screen and (min-width: 708px) {
+            position: relative;
+        }
+        @media screen and (min-width: 1320px) {
+            position: relative;
+        }
     }
 
     &__title{
@@ -23,7 +33,12 @@
         @media screen and (min-width: 1320px) {
             font-size: 54px;
             letter-spacing: 1.08px;
+            margin-bottom: 50px;
         }
+    }
+
+    &__divv{
+        display: flex;
     }
 
     &__button{
@@ -38,10 +53,13 @@
         @media screen and (min-width: 708px) {
             width: 58px;
             height: 58px;
+            margin-top: 510px;
+            margin-right: 24px;
         }
         @media screen and (min-width: 1320px) {
             width: 70px;
             height: 70px;
+            margin-right: 20px;
         }
     }
 
@@ -57,6 +75,7 @@
         @media screen and (min-width: 708px) {
             width: 58px;
             height: 58px;
+            margin-top: 510px;
         }
         @media screen and (min-width: 1320px) {
             width: 70px;
@@ -69,10 +88,16 @@
         @media screen and (min-width: 708px) {
             width: 648px;
             height: 446px;
+            position: absolute;
+            top: 64px;
         }
         @media screen and (min-width: 1320px) {
             width: 700px;
             height: 664px;
+            position: absolute;
+            right: -49px;
+            
+            top: 0;
         }
     }
 
@@ -90,6 +115,15 @@
         }
     }
 
+    &__div2{
+        @media screen and (min-width: 708px) {
+            margin-top: 40px;
+        }
+        @media screen and (min-width: 1320px) {
+            margin-top: 50px;
+        }
+    }
+
     &__subtitle{
         width: 271px;
         color: $text-color;
@@ -99,10 +133,12 @@
         font-weight: 400;
         line-height: 1.25;
         @media screen and (min-width: 708px) {
-
+            margin-top: 25px;
+            margin-bottom: 25px;
         }
         @media screen and (min-width: 1320px) {
-            
+            margin-top: 25px;
+            margin-bottom: 25px;
         }
     }
 
@@ -118,10 +154,14 @@
         @media screen and (min-width: 708px) {
             font-size: 30px;
             letter-spacing: 0.6px;
+            margin-top: 52px;
+            margin-bottom: 32px;
         }
         @media screen and (min-width: 1320px) {
             font-size: 54px;
             letter-spacing: 1.08px;
+            margin-top: 50px;
+            margin-bottom: 32px;
         }
     }
 
