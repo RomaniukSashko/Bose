@@ -9,12 +9,7 @@
     }
 
     &__box{
-        @media screen and (min-width: 708px) {
-            position: relative;
-        }
-        @media screen and (min-width: 1320px) {
-            position: relative;
-        }
+        position: relative;
     }
 
     &__title{
@@ -39,6 +34,13 @@
 
     &__divv{
         display: flex;
+        margin-bottom: 32px;
+        @media screen and (min-width: 708px) {
+            margin-bottom: 40px;
+        }
+        @media screen and (min-width: 1320px) {
+            margin-bottom: 50px;
+        }
     }
 
     &__button{
@@ -50,17 +52,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 330px;
+    margin-right: 24px;
         @media screen and (min-width: 708px) {
             width: 58px;
             height: 58px;
             margin-top: 510px;
-            margin-right: 24px;
         }
         @media screen and (min-width: 1320px) {
             width: 70px;
             height: 70px;
             margin-right: 20px;
+            margin-top: 0;
         }
+    }
+
+    &__button:hover{
+        border: 1px outset $button-color;
+    }
+    &__button:focus{
+        border: 1px outset $button-color;
     }
 
     &__button2{
@@ -72,6 +83,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 330px;
         @media screen and (min-width: 708px) {
             width: 58px;
             height: 58px;
@@ -80,48 +92,53 @@
         @media screen and (min-width: 1320px) {
             width: 70px;
             height: 70px;
+            margin-top: 0;
+            
         }
+    }
+    &__button2:hover{
+        border: 1px outset $button-color;
+    }
+    &__button2:focus{
+        border: 1px outset $button-color;
     }
 
     &__img{
         width: 100%;
+        position: absolute;
+        top: 50px;
+        right: 0;
         @media screen and (min-width: 708px) {
             width: 648px;
             height: 446px;
-            position: absolute;
             top: 64px;
         }
         @media screen and (min-width: 1320px) {
             width: 700px;
             height: 664px;
-            position: absolute;
             right: -49px;
             
             top: 0;
         }
     }
 
-    &__div::before{
-        content: "";
-        display: block;
-        width: 100%;
-        height: 2px;
-        background-color: $text-color;
-        @media screen and (min-width: 708px) {
-            width: 648px;
-        }
-        @media screen and (min-width: 1320px) {
-            width: 400px;
-        }
+    &__list{
+        display: inline-block;
     }
 
-    &__div2{
-        @media screen and (min-width: 708px) {
-            margin-top: 40px;
-        }
-        @media screen and (min-width: 1320px) {
-            margin-top: 50px;
-        }
+
+    &__item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.10);
+        border-top: 2px solid rgba(255, 255, 255, 0.10);
+
+    }
+
+    &__item:nth-child(2){
+    border-top: none;
+    border-bottom: none;
     }
 
     &__subtitle{
@@ -132,14 +149,15 @@
         font-size: 16px;
         font-weight: 400;
         line-height: 1.25;
-        @media screen and (min-width: 708px) {
-            margin-top: 25px;
-            margin-bottom: 25px;
-        }
-        @media screen and (min-width: 1320px) {
-            margin-top: 25px;
-            margin-bottom: 25px;
-        }
+        margin-top: 25px;
+        margin-bottom: 25px;
+
+    }
+
+    &__svg{
+        width: 20px;
+        height: 20px;
+        
     }
 
     &__title2{
@@ -151,6 +169,8 @@
         line-height: 1.2;
         letter-spacing: 0.48px;
         text-transform: uppercase;
+        margin-top: 32px;
+        margin-bottom: 24px;
         @media screen and (min-width: 708px) {
             font-size: 30px;
             letter-spacing: 0.6px;
