@@ -114,6 +114,28 @@
             width: 648px;
             height: 446px;
             top: 64px;
+            right: 30px;
+        }
+        @media screen and (min-width: 1320px) {
+            width: 700px;
+            height: 664px;
+            right: -49px;
+            
+            top: 0;
+        }
+    }
+
+    &__img-s {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        @media screen and (min-width: 708px) {
+            width: 648px;
+            height: 446px;
+            top: 64px;
+            right: 30px;
         }
         @media screen and (min-width: 1320px) {
             width: 700px;

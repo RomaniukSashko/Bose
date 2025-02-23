@@ -1640,10 +1640,34 @@ button, a {
     width: 648px;
     height: 446px;
     top: 64px;
+    right: 30px;
   }
 }
 @media screen and (min-width: 1320px) {
   .model__img {
+    width: 700px;
+    height: 664px;
+    right: -49px;
+    top: 0;
+  }
+}
+.model__img-s {
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  right: 0;
+}
+@media screen and (min-width: 708px) {
+  .model__img-s {
+    width: 648px;
+    height: 446px;
+    top: 64px;
+    right: 30px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .model__img-s {
     width: 700px;
     height: 664px;
     right: -49px;
