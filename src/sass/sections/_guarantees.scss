@@ -20,10 +20,16 @@
 
         @media screen and (min-width: 1320px) {
             justify-content: space-evenly;
-            background-image: url("../img/desktop/history-desktop-background@2x.webp");
+            background-image: url("../img/desktop/history-desktop-background@1x.webp");
             background-repeat: no-repeat;
             background-position: bottom right calc((100% - 1150px)/2) ;
             background-size: 15%;
+
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image:  url(../img/desktop/history-desktop-background@2x.webp);
+            }
         }
         
     }
