@@ -11,7 +11,6 @@
     }
   
     &__box {
-  
         @media screen and (min-width: 708px) {
             display: flex;
             align-items: center;
@@ -150,7 +149,7 @@
         @media screen and (min-width: 1320px) {
             max-width: 650px;
             height: 540px;
-            right: -90px;
+            right: -40px;
         }
 
         @keyframes hero-img {
