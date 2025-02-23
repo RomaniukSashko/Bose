@@ -14,7 +14,7 @@
 
         @media screen and (min-width: 1320px) {
             display: flex;
-            flex-direction: column;;
+            flex-direction: column;
             position: relative;
             align-items: end;
         }
@@ -44,6 +44,7 @@
     }
 
     &__video {
+        border: none;
         width: 280px;
         height: 180px;
         margin-bottom: 32px;
@@ -59,7 +60,6 @@
             position: absolute;
             left: 0;
         }
-
     }
 
     &__link-box {
@@ -68,6 +68,7 @@
             flex-direction: column;
             align-items: start;
             order: 2;
+            min-height: 590px;
         }
     }
 
@@ -91,19 +92,34 @@
         font-weight: 400;
         line-height: 1.25; 
         margin-bottom: 32px;
-
+        min-height: 122.5px;
+        opacity: 0;
+        transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        
         @media screen and (min-width:708px) {
             font-size: 16px;
             line-height: 1.45;
+            width: 530px;
+            min-height: 92px;
         }
 
         @media screen and (min-width:1320px) {
             font-size: 28px;
             width: 340px;
             margin-bottom: 70px;
+            height: 487px;
         }
-
     }
+
+    &__desc.visible {
+        opacity: 1;
+    }
+       
+
+    &__list {
+        justify-content: flex-end;
+    }
+
 
     &__item {
         display: flex;
@@ -120,16 +136,13 @@
         border: none;
         display: flex;
         padding: 3px;
+        transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
         @media screen and (min-width: 1320px) {
             font-size: 28px;
             padding: 5px;
         }
 
-    }
-
-    &__button:first-child {
-        color: $button-color; 
     }
 
     &__button::after {
@@ -139,6 +152,7 @@
         width: 4px;
         height: 25px;
         margin-left: 20px;
+        transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
         @media screen and (min-width: 1320px) {
             width: 7px;
@@ -147,15 +161,22 @@
         }
     }
 
-
-    &__button:first-child:after {
-        color: $button-color;
+    &__button:hover {
+        color: rgba(223, 61, 58, 0.6);
     }
 
     &__button:last-child:after {
         display: none;
     }
 
-    
+    .active {
+        color: $button-color; 
+    }
+
+    .active::after {
+        color: $button-color; 
+    }
+
+
 
 }
