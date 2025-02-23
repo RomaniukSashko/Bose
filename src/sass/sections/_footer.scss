@@ -1,5 +1,5 @@
 .footer {
-    padding-top: 46px;
+    padding-top: 36px;
     padding-bottom: 52px;
 
     @media screen and (min-width: 708px) {
@@ -9,7 +9,7 @@
 
     @media screen and (min-width: 1320px) {
         padding-top: 85px;
-        padding-bottom: 77px;
+        padding-bottom: 74px;
     }
 
     & > .container{
@@ -32,7 +32,6 @@
             column-gap: 139px;
             margin-bottom: 0;
         }
-
 
         @media screen and (min-width: 1320px) {
             height: auto;

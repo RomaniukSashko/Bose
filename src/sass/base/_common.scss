@@ -15,6 +15,15 @@
 body { 
     background-color: $bcg-color;
     font-family: "Gilroy";
+    padding-top: 85px;
+
+    @media screen and (min-width: 708px) {
+        padding-top: 129px;
+    }
+
+    @media screen and (min-width: 1320px) {
+        padding-top: 165px;
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {

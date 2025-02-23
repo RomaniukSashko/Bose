@@ -1,6 +1,14 @@
 .feedback {
-    padding: 44px 0 26px 0;
+    padding: 44px 0 36px 0;
   
+    @media screen and (min-width: 708px) {
+        padding: 50px 0;
+    }
+
+    @media screen and (min-width: 1320px) {
+        padding: 85px 0;
+    }
+
     &__background {
         width: 280px;
         height: 235px;
@@ -175,7 +183,6 @@
   
     &__checkbox:checked + &__checkbox-custom:after {
         display: inline-block;
-
     }
   
     &__checkbox-custom:after {
@@ -246,5 +253,4 @@
         background-color: $button-color;
         transform: scale(1.1);
     }
-  
-  }
+}

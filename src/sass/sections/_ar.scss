@@ -1,12 +1,20 @@
 .ar{
-    padding-top: 170px;
-    padding-bottom: 85px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+
+    @media screen and (min-width: 708px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    @media screen and (min-width: 1320px) {
+        padding-top: 85px;
+        padding-bottom: 85px;
+    }
     
 
     &__box{
         @media screen and (min-width: 708px) {
             position: relative;
-
         }
         @media screen and (min-width: 1320px) {
             position: relative;
@@ -16,56 +24,49 @@
 
     &__title{
         color: $title-color;
-font-family: "Gilroy";
-font-size: 24px;
-font-weight: 600;
-line-height: 1.2;
-letter-spacing: 0.48px;
-text-transform: uppercase;
-margin-bottom: 32px;
+        font-family: "Gilroy";
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.2;
+        letter-spacing: 0.48px;
+        text-transform: uppercase;
+        margin-bottom: 32px;
 
         @media screen and (min-width: 708px) {
             font-size: 30px;
             letter-spacing: 0.6px;
-            }
+        }
             
-            @media screen and (min-width: 1320px) {
-                font-size: 54px;
-                letter-spacing: 1.08px;
-                margin-bottom: 50px;
-                }
+        @media screen and (min-width: 1320px) {
+            font-size: 54px;
+            letter-spacing: 1.08px;
+            margin-bottom: 50px;
+        }
     }
 
     &__subtitle{
         color: $title-color;
-
         font-family: "Gilroy";
         font-size: 20px;
         font-weight: 600;
         line-height: 1.25;
         margin-bottom: 16px;
-
-
-        @media screen and (min-width: 708px) {
             
-            }
-            
-            @media screen and (min-width: 1320px) {
-                font-size: 28px;
-                margin-bottom: 20px;
-                }
+        @media screen and (min-width: 1320px) {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
 
     }
 
     &__text{
         width: 280px;
         color: $text-color;
-
-font-family: "Gilroy";
-font-size: 14px;
-font-weight: 400;
-line-height: 1.25;
-margin-bottom: 32px;
+        font-family: "Gilroy";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.25;
+        margin-bottom: 32px;
 
         @media screen and (min-width: 708px) {
             width: 294px;
@@ -79,7 +80,7 @@ margin-bottom: 32px;
             width: 380px;
             font-size: 20px;
             line-height: 1.45;
-            }
+        }
     }
 
     &__img{
@@ -98,6 +99,6 @@ margin-bottom: 32px;
             position: absolute;
             top: 0px;
             right: 0px;
-            }
+        }
     }
 }

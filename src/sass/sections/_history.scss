@@ -11,10 +11,10 @@
     }
 
     &__box {
-    background-image: url("../img/phone/history-phone-background@2x.webp");
-    background-repeat: no-repeat;
-    background-size: 120px;
-    background-position: top right calc((100% - 220px)/2);
+        background-image: url("../img/phone/history-phone-background@2x.webp");
+        background-repeat: no-repeat;
+        background-size: 120px;
+        background-position: top right calc((100% - 220px)/2);
     
     @media screen and (min-width: 708px) {
         background-image: none;

@@ -1,9 +1,8 @@
 .reviews {
-    padding: 36px 0 16px 0;
+    padding: 36px 0 8px 0;
 
     @media screen and (min-width: 708px) {
         padding: 50px 0;
-        
     }
 
     @media screen and (min-width: 1320px) {
@@ -176,7 +175,5 @@
     .active::after {
         color: $button-color; 
     }
-
-
 
 }

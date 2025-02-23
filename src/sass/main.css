@@ -58,6 +58,17 @@ img {
 body {
   background-color: #191919;
   font-family: "Gilroy";
+  padding-top: 85px;
+}
+@media screen and (min-width: 708px) {
+  body {
+    padding-top: 129px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  body {
+    padding-top: 165px;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -85,6 +96,11 @@ button, a {
 .header {
   padding-top: 30px;
   padding-bottom: 32px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background-color: #191919;
+  width: 100%;
 }
 @media screen and (min-width: 708px) {
   .header {
@@ -570,7 +586,20 @@ button, a {
 }
 
 .silence {
-  padding-top: 170px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+@media screen and (min-width: 708px) {
+  .silence {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .silence {
+    padding-top: 85px;
+    padding-bottom: 85px;
+  }
 }
 @media screen and (min-width: 708px) {
   .silence__box {
@@ -703,8 +732,20 @@ button, a {
 }
 
 .ar {
-  padding-top: 170px;
-  padding-bottom: 85px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+@media screen and (min-width: 708px) {
+  .ar {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .ar {
+    padding-top: 85px;
+    padding-bottom: 85px;
+  }
 }
 @media screen and (min-width: 708px) {
   .ar__box {
@@ -1168,7 +1209,7 @@ button, a {
 }
 
 .reviews {
-  padding: 36px 0 16px 0;
+  padding: 36px 0 8px 0;
 }
 @media screen and (min-width: 708px) {
   .reviews {
@@ -1336,16 +1377,19 @@ button, a {
 }
 
 .faq {
-  padding-top: 16px;
+  padding-top: 8px;
+  padding-bottom: 2px;
 }
 @media screen and (min-width: 708px) {
   .faq {
     padding-top: 50px;
+    padding-bottom: 22px;
   }
 }
 @media screen and (min-width: 1320px) {
   .faq {
     padding-top: 85px;
+    padding-bottom: 64px;
   }
 }
 .faq__title {
@@ -1467,16 +1511,18 @@ button, a {
 }
 
 .model {
-  padding-top: 52px;
+  padding-top: 26px;
+  padding-bottom: 44px;
 }
 @media screen and (min-width: 708px) {
   .model {
-    padding-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 @media screen and (min-width: 1320px) {
   .model {
-    padding-top: 170px;
+    padding-top: 85px;
     padding-bottom: 85px;
   }
 }
@@ -1700,7 +1746,17 @@ button, a {
 }
 
 .feedback {
-  padding: 44px 0 26px 0;
+  padding: 44px 0 36px 0;
+}
+@media screen and (min-width: 708px) {
+  .feedback {
+    padding: 50px 0;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .feedback {
+    padding: 85px 0;
+  }
 }
 .feedback__background {
   width: 280px;
@@ -1932,7 +1988,7 @@ button, a {
 }
 
 .footer {
-  padding-top: 46px;
+  padding-top: 36px;
   padding-bottom: 52px;
 }
 @media screen and (min-width: 708px) {
@@ -1944,7 +2000,7 @@ button, a {
 @media screen and (min-width: 1320px) {
   .footer {
     padding-top: 85px;
-    padding-bottom: 77px;
+    padding-bottom: 74px;
   }
 }
 @media screen and (min-width: 708px) {
@@ -2106,6 +2162,7 @@ button, a {
   transition-property: transform visibility;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1000;
 }
 @media screen and (min-width: 708px) {
   .menu {
