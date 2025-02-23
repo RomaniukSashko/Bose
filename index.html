@@ -13,7 +13,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <script type="module" crossorigin src="/Bose/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Bose/assets/index-ba856ecd.css">
+    <link rel="stylesheet" href="/Bose/assets/index-732892c6.css">
   </head>
   <body>
     <header class="header" id="header" data-aos="fade-down">
@@ -108,7 +108,7 @@
         </div>
     </div>
 </section>
-    <section class="silence">
+    <section class="silence" data-aos="fade-left">
     <div class="container silence__box">
     <h2 class="silence__title">The luxury of silence</h2>
     <picture>
@@ -130,7 +130,7 @@
     </ul>
 </div>
 </section>
-    <section class="ar">
+    <section class="ar" data-aos="fade-right">
   <div class="container ar__box">
     <h2 class="ar__title">Bose AR</h2>
      <h3 class="ar__subtitle">Brand name technology</h3>
@@ -145,7 +145,7 @@
     </picture>
   </div> 
 </section>
-    <section class="guarantees" id="guarantees">
+    <section class="guarantees" id="guarantees" data-aos="zoom-in">
     <div class="container guarantees__box">
         <div class="guarantees__text-box">
         <h2 class="guarantees__title">Guarantees</h2>
@@ -168,7 +168,7 @@
         </picture>
     </div>
 </section>
-    <section class="history" id="history">
+    <section class="history" id="history" data-aos="fade-up-left">
     <div class="container history__box">
         <div class="history__text-box">
         <h2 class="history__title">brand creation history</h2>
@@ -206,23 +206,70 @@
         </div>
     </div>
 </section>
-    <section class="reviews" id="reviews">
+    <section class="reviews" id="reviews" data-aos="fade-up-right">
     <div class="container reviews__box">
         <h2 class="reviews__title">reviews</h2>
-        <iframe src="https://www.youtube-nocookie.com/embed/VqP11Ma_2Fk?si=sZX4aB27XTYGNQyw" loading="lazy" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="reviews__video"></iframe>
+        <iframe id="videoFrame" src="https://www.youtube-nocookie.com/embed/VqP11Ma_2Fk?si=sZX4aB27XTYGNQyw" loading="lazy" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="visible reviews__video"></iframe>
         <div class="reviews__link-box">
         <a href="https://www.youtube.com/watch?v=VqP11Ma_2Fk" target="_blank"  class="reviews__link">Bose Сorporation</a>
-        <p class="reviews__desc">Critically acclaimed for their powerful noise cancelling, astonishing sound, and unrivaled voice pickup, Bose Noise Cancelling Headphones 700 help turn any space into the perfect place to listen to music, get work done, or just shut out the world for a few moments and relax </p>
+        <div class="reviews__desc-box">
+        <p id="videoDescription" class="reviews__desc visible">Critically acclaimed for their powerful noise cancelling, astonishing sound, and unrivaled voice pickup, Bose Noise Cancelling Headphones 700 help turn any space into the perfect place to listen to music, get work done, or just shut out the world for a few moments and relax </p>
+        </div>
         <ul class="reviews__list">
-            <li class="reviews__item"><button type="button" class="reviews__button">01</button>
-            <button type="button" class="reviews__button">02</button>
-            <button type="button" class="reviews__button">03</button>
-            <button type="button" class="reviews__button">04</button></li>
+            <li class="reviews__item">
+            <button onclick="changeVideo(1)" type="button" class="active reviews__button">01</button>
+            <button onclick="changeVideo(2)" type="button" class="reviews__button">02</button>
+            <button onclick="changeVideo(3)" type="button" class="reviews__button">03</button>
+            <button onclick="changeVideo(4)" type="button" class="reviews__button">04</button>
+        </li>
         </ul>
         </div>
     </div>
+    <script>
+        function changeVideo(videoNumber) {
+            const videoFrame = document.getElementById('videoFrame');
+            const videoDescription = document.getElementById('videoDescription');
+            let videoSrc;
+            let descriptionText;
+            switch(videoNumber) {
+                case 1:
+                    videoSrc = "https://www.youtube-nocookie.com/embed/VqP11Ma_2Fk?si=sZX4aB27XTYGNQyw";
+                    descriptionText = "Critically acclaimed for their powerful noise cancelling, astonishing sound, and unrivaled voice pickup, Bose Noise Cancelling Headphones 700 help turn any space into the perfect place to listen to music, get work done, or just shut out the world for a few moments and relax.";
+                    break;
+                case 2:
+                    videoSrc = "https://www.youtube-nocookie.com/embed/BUyLpf-u97Y?si=RiaGpUWYHaCP_GVt";
+                    descriptionText = "Bose Noise Cancelling Headphones 700 deliver everything you expect — and things you never imagined possible. The perfect balance of quiet, comfort, and sound."
+                    break;
+                case 3:
+                    videoSrc = "https://www.youtube-nocookie.com/embed/NgtznBDFRUo?si=7cTv1Pkbzh15oy9s";
+                    descriptionText = "Real stories of people tuning in or out to feel peace, find escape, and for self-care"
+                    break;
+                case 4:
+                    videoSrc = "https://www.youtube-nocookie.com/embed/VqP11Ma_2Fk?si=sZX4aB27XTYGNQyw";
+                    descriptionText = "Critically acclaimed for their powerful noise cancelling, astonishing sound, and unrivaled voice pickup, Bose Noise Cancelling Headphones 700 help turn any space into the perfect place to listen to music, get work done, or just shut out the world for a few moments and relax.";
+                    break;
+                default:
+                    videoSrc = "https://www.youtube-nocookie.com/embed/VqP11Ma_2Fk?si=sZX4aB27XTYGNQyw";
+                    descriptionText = "Critically acclaimed for their powerful noise cancelling, astonishing sound, and unrivaled voice pickup, Bose Noise Cancelling Headphones 700 help turn any space into the perfect place to listen to music, get work done, or just shut out the world for a few moments and relax.";
+            }
+
+            videoFrame.src = videoSrc;
+            videoDescription.classList.remove('visible');
+            videoDescription.textContent = descriptionText;
+            
+            setTimeout(() => {
+        videoDescription.classList.add('visible');
+        }, 100);
+    const buttons = document.querySelectorAll('.reviews__button');
+    buttons.forEach(button => {
+    button.classList.remove('active');
+    });
+    buttons[videoNumber - 1].classList.add('active');
+    buttons[videoNumber - 1].classList.add('active:after');
+    }   
+    </script>
 </section>
-    <section class="faq" id="faq">
+    <section class="faq" id="faq" data-aos="zoom-in">
     <div class="container">
     <h2 class="faq__title">FAQ</h2>
     <ul class="faq__list">
@@ -250,7 +297,7 @@
     </ul>
 </div>
 </section>
-    <section class="model" id="model">
+    <section class="model" id="model" data-aos="fade-left">
     <div class="container model__box">
     <h2 class="model__title">bose nc 700</h2>
     <div class="model__divv">
@@ -287,7 +334,7 @@
     <button type="button" class="model__button3 model__btn3">order</button>
 </div>
 </section>
-    <section class="feedback" id="feedback">
+    <section class="feedback" id="feedback" data-aos="fade-right">
     <div class="container">
         <picture>
             <source srcset="/Bose/assets/feedback-desktop@1x-3a9b7bea.webp 1x, /Bose/assets/feedback-desktop@2x-dea9508d.webp 2x" media="(min-width: 1320px)">
