@@ -187,6 +187,7 @@
         height: 58px;
         background-color: $button-color;
         border: 1px;
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         @media screen and (min-width: 708px) {
             width: 294px;
             height: 58px;
@@ -195,6 +196,12 @@
             width: 400px;
             height: 68px;
         }
+    }
+
+    &__button3:hover {
+        transform: scale(1.1);
+        background-color: $bcg-color;
+        border: 1px solid $button-color;
     }
 
     &__btn3{

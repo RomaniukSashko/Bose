@@ -1710,6 +1710,7 @@ button, a {
   height: 58px;
   background-color: #DF3D3A;
   border: 1px;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 708px) {
   .model__button3 {
@@ -1722,6 +1723,11 @@ button, a {
     width: 400px;
     height: 68px;
   }
+}
+.model__button3:hover {
+  transform: scale(1.1);
+  background-color: #191919;
+  border: 1px solid #DF3D3A;
 }
 .model__btn3 {
   color: rgba(255, 255, 255, 0.9);
