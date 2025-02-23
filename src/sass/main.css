@@ -23,7 +23,6 @@ img {
   max-width: 1320px;
   margin: 0 auto;
   padding: 0 10px;
-  outline: 5px solid burlywood;
 }
 @media screen and (min-width: 300px) {
   .container {
@@ -866,10 +865,15 @@ button, a {
 @media screen and (min-width: 1320px) {
   .guarantees__box {
     justify-content: space-evenly;
-    background-image: url("../img/desktop/history-desktop-background@2x.webp");
+    background-image: url("../img/desktop/history-desktop-background@1x.webp");
     background-repeat: no-repeat;
     background-position: bottom right calc((100% - 1150px) / 2);
     background-size: 15%;
+  }
+}
+@media screen and (min-width: 1320px) and (min-device-pixel-ratio: 2), screen and (min-width: 1320px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1320px) and (min-resolution: 192dpi), screen and (min-width: 1320px) and (min-resolution: 2dppx) {
+  .guarantees__box {
+    background-image: url(../img/desktop/history-desktop-background@2x.webp);
   }
 }
 @media screen and (min-width: 708px) {
@@ -1012,6 +1016,11 @@ button, a {
   background-repeat: no-repeat;
   background-size: 120px;
   background-position: top right calc((100% - 220px) / 2);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .history__box {
+    background-image: url(../img/phone/history-phone-background@2x.webp);
+  }
 }
 @media screen and (min-width: 708px) {
   .history__box {
