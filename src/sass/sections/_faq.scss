@@ -1,15 +1,18 @@
 .faq{
-    padding-top: 16px;
+    padding-top: 8px;
+    padding-bottom: 2px;
+
     @media screen and (min-width: 708px) {
         padding-top: 50px;
+        padding-bottom: 22px;
     }
     @media screen and (min-width: 1320px) {
         padding-top: 85px;
+        padding-bottom: 64px;
     }
 
     &__title{
         color: $title-color;
-
         font-family: "Gilroy";
         font-weight: 600;
         font-size: 24px;
@@ -48,7 +51,6 @@
 
     &__subtitle{
         color: $title-color;
-
         font-family: "Roboto Condensed";
         font-size: 20px;
         font-weight: 400;
@@ -79,17 +81,17 @@
             font-size: 28px;
         }
 
-}
+    }
 
     &__btn{
         background-color: $faq-color;
         border: 1px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 32px;
-    height: 32px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 32px;
         @media screen and (min-width: 1320px) {
             width: 42px;
             height: 42px;  
@@ -98,7 +100,6 @@
 
     &__button{
         color: $title-color;
-
         font-family: "Roboto Condensed";
         font-size: 20px;
         font-weight: 400;

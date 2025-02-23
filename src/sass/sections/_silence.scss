@@ -1,14 +1,22 @@
 .silence{
-    padding-top: 170px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+
+    @media screen and (min-width: 708px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    @media screen and (min-width: 1320px) {
+        padding-top: 85px;
+        padding-bottom: 85px;
+    }
 
     &__box{
         @media screen and (min-width: 708px) {
             position: relative;
-
         }
         @media screen and (min-width: 1320px) {
             position: relative;
-
         }
     }
     
@@ -35,54 +43,49 @@
 
     &__title{
         color: $title-color;
+        font-family: "Gilroy";
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.2;
+        letter-spacing: 0.48px;
+        text-transform: uppercase;
+        // width: 277px;
+        margin-bottom: 32px;
 
-font-family: "Gilroy";
-font-size: 24px;
-font-weight: 600;
-line-height: 1.2;
-letter-spacing: 0.48px;
-text-transform: uppercase;
-// width: 277px;
-margin-bottom: 32px;
+        @media screen and (min-width: 708px) {
+            font-size: 30px;
+            letter-spacing: 0.6px;
+            margin-left: 361px;
+        }
 
-
-@media screen and (min-width: 708px) {
-font-size: 30px;
-letter-spacing: 0.6px;
-margin-left: 361px;
-
-}
-
-@media screen and (min-width: 1320px) {
-    font-size: 54px;
-    letter-spacing: 1.08px;
-    margin-left: 533px;
-    margin-bottom: 50px;
-    }
+        @media screen and (min-width: 1320px) {
+            font-size: 54px;
+            letter-spacing: 1.08px;
+            margin-left: 533px;
+            margin-bottom: 50px;
+        }
     }
 
     &__list{
         display: block;
 
-
         @media screen and (min-width: 708px) {
             display: flex;
-            
-            }
+        }
 
         @media screen and (min-width: 1320px) {
             display: flex;
-            }
+        }
     }
 
     &__item{
         @media screen and (min-width: 708px) {
             margin-top: 325px;
-            } 
+        } 
             
-            @media screen and (min-width: 1320px) {
-                margin-top: 574px;
-                } 
+        @media screen and (min-width: 1320px) {
+            margin-top: 574px;
+        } 
 
         &:nth-child(2){
             @media screen and (min-width: 708px) {
@@ -96,54 +99,49 @@ margin-left: 361px;
 
     &__subtitle{
         color: $title-color;
-
         font-family: "Gilroy";
         font-size: 20px;
         font-weight: 600;
         line-height: 1.25;
         margin-top: 32px;
         margin-bottom: 16px;
-        
-
-
 
         @media screen and (min-width: 708px) {
             // margin-top: 32px;
-            } 
+        } 
             
-            @media screen and (min-width: 1320px) {
-                font-size: 28px;
-                // margin-top: 50px;
-                margin-bottom: 20px;
-                } 
+        @media screen and (min-width: 1320px) {
+            font-size: 28px;
+            // margin-top: 50px;
+            margin-bottom: 20px;
+        } 
 
     }
 
     &__text{
         color: $text-color;
+        font-family: "Gilroy";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.25;
+        width: 280px;
 
-font-family: "Gilroy";
-font-size: 14px;
-font-weight: 400;
-line-height: 1.25;
-width: 280px;
-
-@media screen and (min-width: 708px) {
-    font-size: 16px;
-    line-height: 1.45;
-    width: 294px;
-    }
-    
-    @media screen and (min-width: 1320px) {
-    font-size: 20px;
-    line-height: 1.45;
-    width: 492px;
+        @media screen and (min-width: 708px) {
+            font-size: 16px;
+            line-height: 1.45;
+            width: 294px;
+        }
+            
+        @media screen and (min-width: 1320px) {
+            font-size: 20px;
+            line-height: 1.45;
+            width: 492px;
         }
     }
 
     &__text2{
         @media screen and (min-width: 1320px) {
             width: 510px;
-                }
+        }
     }
 }

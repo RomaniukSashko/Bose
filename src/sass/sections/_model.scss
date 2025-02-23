@@ -1,10 +1,13 @@
 .model{
-    padding-top: 52px;
+    padding-top: 26px;
+    padding-bottom: 44px;
+
     @media screen and (min-width: 708px) {
-        padding-top: 100px;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
     @media screen and (min-width: 1320px) {
-        padding-top: 170px;
+        padding-top: 85px;
         padding-bottom: 85px;
     }
 
@@ -14,7 +17,6 @@
 
     &__title{
         color: $title-color;
-
         font-family: "Gilroy";
         font-size: 24px;
         font-weight: 600;
@@ -48,12 +50,12 @@
         width: 44px;
         height: 44px;
         border: 1px outset white;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 330px;
-    margin-right: 24px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 330px;
+        margin-right: 24px;
         @media screen and (min-width: 708px) {
             width: 58px;
             height: 58px;
@@ -79,11 +81,11 @@
         width: 44px;
         height: 44px;
         border: 1px outset white;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 330px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 330px;
         @media screen and (min-width: 708px) {
             width: 58px;
             height: 58px;
@@ -133,36 +135,31 @@
         justify-content: space-between;
         border-bottom: 2px solid rgba(255, 255, 255, 0.10);
         border-top: 2px solid rgba(255, 255, 255, 0.10);
-
     }
 
     &__item:nth-child(2){
-    border-top: none;
-    border-bottom: none;
+        border-top: none;
+        border-bottom: none;
     }
 
     &__subtitle{
         width: 271px;
         color: $text-color;
-
         font-family: "Gilroy";
         font-size: 16px;
         font-weight: 400;
         line-height: 1.25;
         margin-top: 25px;
         margin-bottom: 25px;
-
     }
 
     &__svg{
         width: 20px;
         height: 20px;
-        
     }
 
     &__title2{
         color: $button-color;
-
         font-family: "Gilroy";
         font-size: 24px;
         font-weight: 600;
@@ -202,7 +199,6 @@
 
     &__btn3{
         color: $button-text;
-
         font-family: "Gilroy";
         font-size: 16px;
         font-weight: 600;
